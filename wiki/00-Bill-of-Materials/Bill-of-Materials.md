@@ -17,6 +17,9 @@ This page contains the overall bill of materials/component list that was used to
 |TBS Unify Pro 5G8 V3 (RP-SMA) Video Transmitter|[GetFPV](https://www.getfpv.com/tbs-unify-pro-5g8.html)|$52|1|$52|
 |TBS Triumph 5.8GHz RHCP FPV Antenna Set (SMA Male)|[GetFPV](https://www.getfpv.com/tbs-triumph-5-8ghz-rhcp-fpv-antenna-set-sma.html)|$52|1|$52|
 |HDZero Goggle 2|[HDZero](https://hdzero.us/products/hdzero-goggle-2)|$750|1|$750|
+|SanDisk 256GB Extreme microSDXC UHS-I Memory Card|[Amazon](https://www.amazon.com/dp/B07FCR3316)|$26|1|$26|
+
+
 
 <!--
 |Component|[Source](https:URL)|$XXX|1|$XXX|
