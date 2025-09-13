@@ -4,27 +4,24 @@ The build will also include TBS’s Unify Pro VTX for rock-solid video transmiss
 
 Let’s dive into this small but mighty build and see what a 3.5” FPV drone can really do!
 
-<!--
 # YouTube Play List
-TODO
-All of the YouTube videos linked in this wiki are organized into a [single playlist](https://www.youtube.com/playlist?list=PLT3XAJfSsN4FFodHkPWbuXHesVJ0ILG6v) you can watch as well. Follow each part of the video playlist in order.
--->
+All of the YouTube videos linked in this wiki are organized into a [single playlist](https://www.youtube.com/playlist?list=PLT3XAJfSsN4EERDBXgCUOW7uXXP5H9qVY) you can watch as well. Follow each part of the video playlist in order.
 
 # Bill of Materials
 - [Overall BOM](00-Bill-of-Materials/Bill-of-Materials.md) - This page contains the overall bill of materials/component list that was used to construct the drone.
 
 # Step by Step Build Process
 Use the list below to follow my build journey step by step.
-
-TODO
-Future steps are coming soon!
-
+1. [Parts Overview and Motor Mounting](01-Parts-Overview-and-Motor-Mounting/Parts-Overview-and-Motor-Mounting.md)
+1. [Frame Assembly](02-Frame-Assembly/Frame-Assembly.md)
 
 # Drone Weight
 The weight of this drone is as follows:
 - TODO XX lb without battery or payload (just frame, motors, electronics, etc).
 - TODO XX lb with battery (The battery is X.XX lb).
 
+# Full ArduPilot Configuration Summary
+- [ArduPilot Configuration](ArduPilot-Config/ArduPilot-Config.md) - This page contains a consolidated list of the all of the configuration done in ArduPilot throughout the videos.
 
 # Pictures
-![Frame](./01-Frame/images/frame1.png)
+![Frame](./01-Parts-Overview-and-Motor-Mounting/images/frame1.png)

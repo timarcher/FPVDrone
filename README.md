@@ -8,4 +8,4 @@ Let’s dive into this small but mighty build and see what a 3.5” FPV drone ca
 For details [click here to access the wiki and documentation home folder.](./wiki/Drone-Wiki.md)
 
 # Pictures
-![Frame](./wiki/01-Frame/images/frame1.png)
+![Frame](./wiki/01-Parts-Overview-and-Motor-Mounting/images/frame1.png)

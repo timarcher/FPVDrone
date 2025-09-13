@@ -7,14 +7,14 @@ This page contains the overall bill of materials/component list that was used to
 |Diatone Mamba 3 Pcs FPV Soldering Practice Board|[Amazon](https://www.amazon.com/dp/B0C5RBTHT1)|$14|1|$14|
 |RadioMaster 2.4GHz RP1 ELRS FPV Receiver ExpressLRS Nano Receiver|[Amazon](https://www.amazon.com/dp/B0BZY2M4BS)|$20|1|$20|
 |TATTU RL3 120C 1800mAh 4S1P 14.8V Lipo Battery with XT60 Plug|[Amazon](https://www.amazon.com/dp/B013I9SAHO)|$28|1|$24|
-|RadioMaster Ranger Nano 2.4GHz ELRS Module|[Amazon](https://www.amazon.com/dp/B0D1QVZLY9)|$46|1|$46|
+|RadioMaster Ranger Micro 2.4Ghz ELRS Module|[GetFPV](https://www.getfpv.com/radiomaster-ranger-micro-2-4ghz-elrs-module.html)|$52|1|$52|
 |iFlight XING 2205 FPV NextGen Motor - 2300KV Brushless Motor|[Pyrdrone](https://pyrodrone.com/products/iflight-xing-2205-fpv-nextgen-motor-2300kv)|$24|4|$96|
 |RunCam Phoenix 2 Nano FPV Camera|[Amazon](https://www.amazon.com/dp/B0C2VM4JW1)|$40|1|$40|
 |Gemfan Ducted Propeller D90 3.5 inch M5 Shaft 3-Blade Props|[Amazon](https://www.amazon.com/dp/B0CKY88TDK)|$20|1|$20|
 |RadioMaster TX16S Mark II MAX Edition 2.4GHz|[Amazon]([https:URL](https://www.amazon.com/gp/product/B0B6Y96J7L/ref=ox_sc_act_title_1))|$470|1|$470|
 |MicoAir743 V2 60A Bluejay 30×30 FC&ESC Stack|[MicroAir](https://store.micoair.com/product/micoair743-v2/)|$86|1|$86|
 |M10G-5883 GPS Module|[MicroAir](https://store.micoair.com/product/m9-m10-gps-module/)|$11|1|$11|
-|TBS Unify Pro 5G8 V3 (RP-SMA) Video Transmitter|[GetFPV](https://www.getfpv.com/tbs-unify-pro-5g8.html)|$52|1|$52|
+TBS Unify Pro HV 5G8 - Race (SMA) Video Transmitter|[GetFPV](https://www.getfpv.com/tbs-unify-pro-hv-5g8-race-sma.html)|$39|1|$39|
 |TBS Triumph 5.8GHz RHCP FPV Antenna Set (SMA Male)|[GetFPV](https://www.getfpv.com/tbs-triumph-5-8ghz-rhcp-fpv-antenna-set-sma.html)|$52|1|$52|
 |HDZero Goggle 2|[HDZero](https://hdzero.us/products/hdzero-goggle-2)|$750|1|$750|
 |SanDisk 256GB Extreme microSDXC UHS-I Memory Card|[Amazon](https://www.amazon.com/dp/B07FCR3316)|$26|1|$26|
