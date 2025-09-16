@@ -55,11 +55,35 @@ Note: If you are using a fresh installation of mission planner you will have to 
 |BATT_VOLT_MULT|21.2||
 |BATT_VOLT_PIN|10||
 
-
-## Parameters - Receiver
+## Parameters - Frame
 |Parameter Name|Value|Description|
 |---|---|---|
-|SERIAL6_PROTOCOL|23|RCIN, whcih should be the default.|
+|FRAME_TYPE|1|X type|
+|FRAME_CLASS|1|Quad|
+
+## Parameters - ESC
+|Parameter Name|Value|Description|
+|---|---|---|
+|MOT_PWM_TYPE|6|DShot 600.|
+
+
+## Parameters - ELRS Receiver
+|Parameter Name|Value|Description|
+|---|---|---|
+|SERIAL6_PROTOCOL|23|CRSF RCIN, which should be the default.|
+|SERIAL6_BAUD|57|57 (57600) is fine. ArduPilot switches it internally to the correct CRSF baud of 400000.|
+|RC_PROTOCOLS|1|This is default value, set to All.|
+|RC_OPTIONS|288|The default is 32. Change to 288 to enable pass-through for CRSF telemetry.|
+|RSSI_TYPE|3|Indicate RSSI is provided by the receiver protocol.|
+
+
+I also had to set these to map the controls properly for my transmitter:
+|Parameter Name|Value|Description|
+|---|---|---|
+|RCMAP_PITCH|3||
+|RCMAP_ROLL|4||
+|RCMAP_THROTTLE|2||
+|RCMAP_YAW|1||
 
 
 ## Parameters - MicoAir M10 GPS
@@ -70,12 +94,23 @@ Note: If you are using a fresh installation of mission planner you will have to 
 |GPS1_TYPE|1|Auto. For M10 modules, ArduPilot is typically able to auto-detect and configure the GPS, so this is the recommended setting.|
 
 
+## Parameters - Video Transmitter Support
+|Parameter Name|Value|Description|
+|---|---|---|
+|VTX_ENABLE|1|Enable VTX support. Reboot flight controller after setting.|
+|SERIAL2_PROTOCOL|37|Enable the SmartAudio protocol.|
+|SERIAL2_BAUD|4|The required baud rate for SmartAudio.|
+|SERIAL2_OPTIONS|4|For half-duplex communication, which SmartAudio requires.|
+|OSD_TYPE|1|Enable the analog OSD system.|
+
+> TODO: Do we need to set VTX_BAND, VTX_CHANNEL, VTX_POWER, and VTX_OPTIONS
+
 ## Parameters - Flight Modes
-I have my flight modes configured as follows. This requires some config in ArduPilot as well as the HereLink controller. You can also set these up in Mission Planner on the Setup->Flight Modes screen.
+I have my flight modes configured as follows. This requires some config in ArduPilot as well as the RadioMaster controller. You can also set these up in Mission Planner on the Setup->Flight Modes screen.
 
 |Parameter Name|Value|Description|
 |---|---|---|
-|FLTMODE_CH|5|RC Channel to use for flight mode control. Default is 5.|
+|FLTMODE_CH|6|RC Channel to use for flight mode control. Default is 5, but we have to change it to 6 since ELRS maps channel 5 to a hard-coded channel 5 (AUX1) as a 2-position, 1-bit arming channel for safety and system performance. This is an intentional design feature of ELRS and cannot be changed, regardless of your other radio settings.|
 |FLTMODE1|5|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.|
 |FLTMODE2|15|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AutoTune.|
 |FLTMODE3|2|Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to AltHold.|
