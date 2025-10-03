@@ -12,8 +12,8 @@ This page contains the overall bill of materials/component list that was used to
 |RunCam Phoenix 2 Nano FPV Camera|[Amazon](https://www.amazon.com/dp/B0C2VM4JW1)|$40|1|$40|
 |Gemfan Ducted Propeller D90 3.5 inch M5 Shaft 3-Blade Props|[Amazon](https://www.amazon.com/dp/B0CKY88TDK)|$20|1|$20|
 |RadioMaster TX16S Mark II MAX Edition 2.4GHz|[Amazon]([https:URL](https://www.amazon.com/gp/product/B0B6Y96J7L/ref=ox_sc_act_title_1))|$470|1|$470|
-|MicoAir743 V2 60A Bluejay 30×30 FC&ESC Stack|[MicroAir](https://store.micoair.com/product/micoair743-v2/)|$86|1|$86|
-|M10G-5883 GPS Module|[MicroAir](https://store.micoair.com/product/m9-m10-gps-module/)|$11|1|$11|
+|MicoAir743 V2 60A Bluejay 30×30 FC&ESC Stack|[MicoAir](https://store.micoair.com/product/micoair743-v2/)|$86|1|$86|
+|M10G-5883 GPS Module|[MicoAir](https://store.micoair.com/product/m9-m10-gps-module/)|$11|1|$11|
 TBS Unify Pro HV 5G8 - Race (SMA) Video Transmitter|[GetFPV](https://www.getfpv.com/tbs-unify-pro-hv-5g8-race-sma.html)|$39|1|$39|
 |TBS Triumph 5.8GHz RHCP FPV Antenna Set (SMA Male)|[GetFPV](https://www.getfpv.com/tbs-triumph-5-8ghz-rhcp-fpv-antenna-set-sma.html)|$52|1|$52|
 |HDZero Goggle 2|[HDZero](https://hdzero.us/products/hdzero-goggle-2)|$750|1|$750|
