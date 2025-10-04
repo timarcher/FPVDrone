@@ -5,6 +5,7 @@ This page contains details about setting up the electronics used for the Drone.
 
 # Build Notes
 ## Flight Controller and ESC Setup
+- You must have the [Mission Planner](https://ardupilot.org/planner/docs/mission-planner-installation.html) software installed on your computer.
 - Ensure your motors spin in the appropriate direction as per the [ArduCopter documentation](https://ardupilot.org/copter/docs/connect-escs-and-motors.html).
 - Read the [MicoAir Getting Started Guide for ArduPilot](https://micoair.com/docs/getting-started-guide-for-ardupilot/).
 - View the [pinouts of the MicoAir H743 V2 Flight controller](https://store.micoair.com/product/micoair743-v2/).
