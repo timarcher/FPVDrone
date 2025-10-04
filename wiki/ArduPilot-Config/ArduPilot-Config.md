@@ -65,6 +65,13 @@ Note: If you are using a fresh installation of mission planner you will have to 
 |Parameter Name|Value|Description|
 |---|---|---|
 |MOT_PWM_TYPE|6|DShot 600.|
+|SERVO1_FUNCTION|34|Motor 2|
+|SERVO2_FUNCTION|35|Motor 3|
+|SERVO3_FUNCTION|36|Motor 4|
+|SERVO4_FUNCTION|33|Motor 1|
+|SERVO_DSHOT_ESC|2|BLHeli_S/BlueJay|
+|NTF_LED_TYPES|125127|Check the “DShot” checkbox to enable controlling the ESCs LEDs|
+|NTF_BUZZ_TYPES|3|Check the “DShot” checkbox to enable usingthe motors as buzzers|
 
 
 ## Parameters - ELRS Receiver
