@@ -53,3 +53,7 @@ This page contains details about setting up the electronics used for the Drone.
   -  Long press [SYS] -> Tools -> Yaapu Config
   -  Scroll down and enable CRSF support.
 - Be sure to set the 6 position switch to channel 6 instead of 5 for the flight mode selection. ExpressLRS hard-codes channel 5 (AUX1) as a 2-position, 1-bit arming channel for safety and system performance. This is an intentional design feature of ELRS and cannot be changed, regardless of your other radio settings. You will also need to set FLTMODE_CH to 6 in ArduPilot configuration.
+
+
+## GPS Mount
+- [3d Printed TPU Mount for GPS](https://www.thingiverse.com/thing:6295389)

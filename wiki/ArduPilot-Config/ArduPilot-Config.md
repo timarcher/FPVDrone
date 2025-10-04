@@ -45,7 +45,7 @@ Note: If you are using a fresh installation of mission planner you will have to 
 |BATT_MONITOR|4|Set this first, and then write the params so the other ones below show. Must reboot the board after changing. 4 = Analog voltage and current.|
 |BATT_AMP_PERVLT|40.2||
 |BATT_ARM_VOLT|14.7|Minimum battery voltage required to arm the aircraft.|
-|BATT_CAPACITY|1800|The Tattu 4s battery has 1800 mah.|
+|BATT_CAPACITY|1800|The battery has 1800 mah.|
 |BATT_CRT_VOLT|14|Battery voltage that triggers a critical battery failsafe.|
 |BATT_CURR_PIN|11||
 |BATT_FS_CRT_ACT|1|Action to perform if the critical battery failsafe is hit. 1 = Land|
