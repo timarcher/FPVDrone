@@ -4,7 +4,7 @@ Use this to easily setup a new flight controllers.
 
 # Initial Setup
 Read the [MicoAir Getting Started Guide for ArduPilot](https://micoair.com/docs/getting-started-guide-for-ardupilot/).
-Also read the [ArduPilot Docs on the MicoAir H7430](https://ardupilot.org/copter/docs/common-MicoAir743.html).
+Also read the [ArduPilot Docs on the MicoAir H743](https://ardupilot.org/copter/docs/common-MicoAir743.html).
 After flashing firmware for the first time, use Mission Planner to configure several items:
 - Go to Setup tab.
 - Expand the Mandatory Hardware menu item.
@@ -69,7 +69,7 @@ Note: If you are using a fresh installation of mission planner you will have to 
 |SERVO2_FUNCTION|35|Motor 3|
 |SERVO3_FUNCTION|36|Motor 4|
 |SERVO4_FUNCTION|33|Motor 1|
-|SERVO_DSHOT_ESC|2|BLHeli_S/BlueJay|
+|SERVO_DSHOT_ESC|4|BLHeli_S/BlueJay EDT|
 |NTF_LED_TYPES|125127|Check the “DShot” checkbox to enable controlling the ESCs LEDs|
 |NTF_BUZZ_TYPES|3|Check the “DShot” checkbox to enable usingthe motors as buzzers|
 
