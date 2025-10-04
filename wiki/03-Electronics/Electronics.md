@@ -7,6 +7,7 @@ This page contains details about setting up the electronics used for the Drone.
 ## Transmitter and Receiver Setup
 - Ensure your motors spin in the appropriate direction as per the [ArduCopter documentation](https://ardupilot.org/copter/docs/connect-escs-and-motors.html).
 - Read the [MicoAir Getting Started Guide for ArduPilot](https://micoair.com/docs/getting-started-guide-for-ardupilot/).
+- View the [pinouts of the MicoAir H743 V2 Flight controller0(https://store.micoair.com/product/micoair743-v2/).
 - Setup your MicoAir flight controller with the proper [ArduPilot configuration](../ArduPilot-Config/ArduPilot-Config.md) in order to be able to run a motor test.
 - Install the RadioMaster Ranger Micro 2.4Ghz ELRS Module in the back of your radio.
 - First you need to flash the ExpressLRS Firmware on the receiver.
