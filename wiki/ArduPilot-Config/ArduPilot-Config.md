@@ -69,9 +69,10 @@ Note: If you are using a fresh installation of mission planner you will have to 
 |SERVO2_FUNCTION|35|Motor 3|
 |SERVO3_FUNCTION|36|Motor 4|
 |SERVO4_FUNCTION|33|Motor 1|
+|SERVO_BLH_BDMASK|15|Mask of channels which support bi-directional dshot telemetry.|
 |SERVO_DSHOT_ESC|4|BLHeli_S/BlueJay EDT|
-|NTF_LED_TYPES|125127|Check the “DShot” checkbox to enable controlling the ESCs LEDs|
-|NTF_BUZZ_TYPES|3|Check the “DShot” checkbox to enable usingthe motors as buzzers|
+|NTF_LED_TYPES|125127|Check the "DShot" checkbox to enable controlling the ESCs LEDs|
+|NTF_BUZZ_TYPES|3|Check the "DShot" checkbox to enable usingthe motors as buzzers|
 
 
 ## Parameters - ELRS Receiver

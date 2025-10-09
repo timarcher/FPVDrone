@@ -1,0 +1,117 @@
+AHRS_TRIM_X,0.007967
+AHRS_TRIM_Y,0.000184
+ATC_ACCEL_P_MAX,187100
+ATC_ACCEL_R_MAX,187100
+ATC_ACCEL_Y_MAX,32800
+ATC_RAT_PIT_FLTD,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_PIT_FLTT,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_RLL_FLTD,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_RLL_FLTT,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_YAW_FLTE,2
+ATC_RAT_YAW_FLTT,50.5  # INS_GYRO_FILTER / 2
+COMPASS_CAL_FIT,32
+COMPASS_DEC,0
+COMPASS_DIA_X,1.013065
+COMPASS_DIA_Y,0.966271
+COMPASS_DIA_Z,1.013777
+COMPASS_EXTERNAL,1
+COMPASS_ODI_X,-0.011553
+COMPASS_ODI_Y,-0.014457
+COMPASS_ODI_Z,0.007573
+COMPASS_OFS_X,-267.775269
+COMPASS_OFS_Y,-12.369426
+COMPASS_OFS_Z,-24.131445
+COMPASS_ORIENT,6
+COMPASS_PRIO1_ID,855305
+COMPASS_PRIO2_ID,855297
+COMPASS_SCALE,1.025357
+COMPASS_USE,1  # Use the external herelink compass.
+COMPASS_USE2,0  # Disable the internal compass, it seems to be much less accurate.
+FENCE_ACTION,4  # 4 = Brake or Land. Set to 0 for report only.
+FENCE_ALT_MAX,30  # Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.
+FENCE_ALT_MIN,-10  # Minimum altitude allowed before geofence triggers. Value is in meters.
+FENCE_AUTOENABLE,0  # Auto-enable of fences. Set to Disabled.
+FENCE_ENABLE,1  # Allows you to enable (1) or disable (0) the fence functionality.
+FENCE_MARGIN,3  # Distance that autopilot's should maintain from the fence to avoid a breach. Value is in meters.
+FENCE_RADIUS,100  # Circle fence radius which when breached will cause an RTL. Value is in meters.
+FENCE_TYPE,7  # Bitmask. Set to Max Altitude, Circle Centered on Home, and Inclusion/Exclusion Circles+Polygons
+FLTMODE_CH,6  # RC Channel to use for flight mode control. Default is 5.
+FLTMODE1,5  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.
+FLTMODE2,15  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AltHold.
+FLTMODE3,2  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to Auto (For running missions).
+FLTMODE4,3  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1490, <= 1620. Set to Auto (For running missions).
+FLTMODE5,6  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.
+FLTMODE6,9  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.
+FRAME_CLASS,1  # Quadcopter
+FRAME_TYPE,1  # X type
+INS_ACC2OFFS_X,-0.033894
+INS_ACC2OFFS_Y,0.054666
+INS_ACC2OFFS_Z,0.120077
+INS_ACC2SCAL_X,0.994374
+INS_ACC2SCAL_Y,0.991915
+INS_ACC2SCAL_Z,0.99308
+INS_ACCOFFS_X,0.060173
+INS_ACCOFFS_Y,-0.096777
+INS_ACCOFFS_Z,0.133639
+INS_ACCSCAL_X,0.994204
+INS_ACCSCAL_Y,0.994104
+INS_ACCSCAL_Z,0.993632
+INS_GYR2OFFS_X,-0.001601
+INS_GYR2OFFS_Y,0.010119
+INS_GYR2OFFS_Z,-0.0003
+INS_GYRO_FILTER,101
+INS_GYROFFS_X,0.004989
+INS_GYROFFS_Y,0.003818
+INS_GYROFFS_Z,0.000302
+MOT_BAT_VOLT_MAX,16.799999  # Battery voltage compensation maximum voltage. Set to 4.2 * cell count.
+MOT_BAT_VOLT_MIN,14.2  # Battery voltage minimum compensation voltage. Set to 3.3 * cell count.
+MOT_SPIN_ARM,0.1
+MOT_SPIN_MAX,0.95
+MOT_SPIN_MIN,0.15
+MOT_THST_EXPO,0.43
+MOT_THST_HOVER,0.2
+RC1_MAX,2011
+RC1_MIN,988
+RC1_TRIM,1500
+RC10_MAX,1900
+RC10_MIN,1100
+RC10_TRIM,1500
+RC11_TRIM,1500
+RC12_TRIM,1500
+RC13_TRIM,1500
+RC14_TRIM,1500
+RC15_TRIM,987
+RC16_TRIM,1146
+RC2_MAX,2011
+RC2_MIN,988
+RC2_REVERSED,0
+RC2_TRIM,1500
+RC3_MAX,2011
+RC3_MIN,988
+RC3_TRIM,1500
+RC4_MAX,2008
+RC4_MIN,988
+RC4_TRIM,1496
+RC5_MAX,2000
+RC5_MIN,999
+RC5_TRIM,999
+RC6_MAX,2000
+RC6_MIN,999
+RC6_TRIM,2000
+RC7_MAX,2000
+RC7_MIN,999
+RC7_TRIM,2000
+RC8_MAX,2000
+RC8_MIN,999
+RC8_TRIM,999
+RC9_MAX,1900
+RC9_MIN,1100
+RC9_TRIM,1500
+RCMAP_PITCH,3
+RCMAP_ROLL,4
+RCMAP_THROTTLE,2
+RCMAP_YAW,1
+SERVO1_FUNCTION,34  # Left Motor
+SERVO2_FUNCTION,35
+SERVO3_FUNCTION,36  # Right Motor
+SERVO4_FUNCTION,33

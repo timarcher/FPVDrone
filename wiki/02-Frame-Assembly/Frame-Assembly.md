@@ -5,7 +5,6 @@ This page contains details about building the frame used for the Drone.
 
 # Build Notes
 - Make sure you get 12mm motors so that they will mount properly to the frame.
-- [3d Printed TPU Mount for GPS](https://www.thingiverse.com/thing:6295389)
 
 # Pictures
 ![Frame](../01-Parts-Overview-and-Motor-Mounting/images/frame1.png)

@@ -56,4 +56,5 @@ This page contains details about setting up the electronics used for the Drone.
 
 
 ## GPS Mount
-- [3d Printed TPU Mount for GPS](https://www.thingiverse.com/thing:6295389)
+- [3d Printed TPU Mount for GPS - Rear Option](https://www.thingiverse.com/thing:6295389) - rear mount, holds video transmitter antenna and elrs receiver antenna.
+- [3d Printed TPU Mount for GPS - Front Option](https://www.thingiverse.com/thing:4759922)
