@@ -1,5 +1,5 @@
 MOT_HOVER_LEARN,2  # So that it can tune the throttle controller on 20_throttle_controller.param file
-MOT_PWM_TYPE,7  # Specified in component editor window
+MOT_PWM_TYPE,6  # DShot 600. Specified in component editor window
 NTF_BUZZ_TYPES,3  # Check the "DShot" checkbox to enable usingthe motors as buzzers
 NTF_LED_TYPES,125127  # Check the "DShot" checkbox to enable controlling the ESCs LEDs
 SERVO_BLH_BDMASK,15  # Mask of channels which support bi-directional dshot telemetry.
