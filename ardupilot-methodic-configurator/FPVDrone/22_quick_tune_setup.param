@@ -12,3 +12,4 @@ QUIK_RP_PI_RATIO,1
 QUIK_Y_PI_RATIO,10
 QUIK_YAW_D_MAX,0.01
 QUIK_YAW_P_MAX,0.5
+RC7_OPTION,300  # RC switch will be used to start/stop the tune set RCx_OPTION = 300 where "x" is the RC input channel number.
