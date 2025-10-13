@@ -1,7 +1,7 @@
 This page contains details about setting up the electronics used for the Drone.
 
 # YouTube Video
-- [Let’s Build an FPV Drone – Part 3 Electronics](https://www.youtube.com/watch?v=nHAfdJlOVx4)
+- [Let’s Build an FPV Drone – Part 3 Electronics](https://youtu.be/nHAfdJlOVx4)
 
 # Build Notes
 ## Flight Controller and ESC Setup
