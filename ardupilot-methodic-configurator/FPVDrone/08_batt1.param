@@ -1,5 +1,5 @@
 BATT_AMP_PERVLT,40.2  # Based on MicoAir docs
-BATT_ARM_VOLT,21.5  # Do not allow arming below this voltage
+BATT_ARM_VOLT,24  # Do not allow arming below this voltage
 BATT_CAPACITY,1600  # Total battery capacity specified in the component editor
 BATT_CRT_MAH,0  # Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
 BATT_CRT_VOLT,19.2  # (Critical voltage + 0.0) x no. of cells

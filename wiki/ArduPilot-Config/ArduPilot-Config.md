@@ -40,17 +40,18 @@ Note: If you are using a fresh installation of mission planner you will have to 
 
 
 ## Parameters - MicoAir voltage and current sensors
+These settings are for a 6s battery. Adjust for a 4s battery.
 |Parameter Name|Value|Description|
 |---|---|---|
 |BATT_MONITOR|4|Set this first, and then write the params so the other ones below show. Must reboot the board after changing. 4 = Analog voltage and current.|
 |BATT_AMP_PERVLT|40.2||
-|BATT_ARM_VOLT|14.7|Minimum battery voltage required to arm the aircraft.|
-|BATT_CAPACITY|1800|The battery has 1800 mah.|
-|BATT_CRT_VOLT|14|Battery voltage that triggers a critical battery failsafe.|
+|BATT_ARM_VOLT|24|Minimum battery voltage required to arm the aircraft.|
+|BATT_CAPACITY|1600|The battery has 1600 mah.|
+|BATT_CRT_VOLT|19.2|Battery voltage that triggers a critical battery failsafe.|
 |BATT_CURR_PIN|11||
 |BATT_FS_CRT_ACT|1|Action to perform if the critical battery failsafe is hit. 1 = Land|
 |BATT_FS_LOW_ACT|2|Action to perform if the low battery failsafe is hit. 2 = RTL|
-|BATT_LOW_VOLT|14.4|Battery voltage that triggers a low battery failsafe.|
+|BATT_LOW_VOLT|21.6|Battery voltage that triggers a low battery failsafe.|
 |BATT_SERIAL_NUM|-1|Leave at default of -1.|
 |BATT_VOLT_MULT|21.2||
 |BATT_VOLT_PIN|10||
