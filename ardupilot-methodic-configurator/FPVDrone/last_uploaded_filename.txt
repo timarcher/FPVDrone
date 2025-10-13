@@ -1,1 +1,1 @@
-13_general_configuration.param
+24_inflight_magnetometer_fit_setup.param
