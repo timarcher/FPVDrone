@@ -115,9 +115,9 @@
                 "Chemistry": "Lipo",
                 "Volt per cell max": 4.2,
                 "Volt per cell low": 3.6,
-                "Volt per cell crit": 3.3,
-                "Number of cells": 4,
-                "Capacity mAh": 1800
+                "Volt per cell crit": 3.2,
+                "Number of cells": 6,
+                "Capacity mAh": 1600
             },
             "Notes": "TATTU RL3 120C 1800mAh 4S1P 14.8V Lipo Battery with XT60 Plug"
         },
