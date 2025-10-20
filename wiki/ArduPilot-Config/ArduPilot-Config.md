@@ -111,6 +111,10 @@ I also had to set these to map the controls properly for my transmitter:
 |SERIAL2_BAUD|4|The required baud rate for SmartAudio.|
 |SERIAL2_OPTIONS|4|For half-duplex communication, which SmartAudio requires.|
 |OSD_TYPE|1|Enable the analog OSD system.|
+|VTX_BAND|0|Band A.|
+|VTX_CHANNEL|0|Channel 1.|
+|VTX_OPTIONS|10|Pitmode until armed and Unlocked options.|
+|VTX_POWER|150|Change from 25 to 150mw.|
 
 > TODO: Do we need to set VTX_BAND, VTX_CHANNEL, VTX_POWER, and VTX_OPTIONS
 
