@@ -5,7 +5,7 @@ Use this to easily setup a new flight controllers.
 # Initial Setup
 Read the [MicoAir Getting Started Guide for ArduPilot](https://micoair.com/docs/getting-started-guide-for-ardupilot/).
 Also read the [ArduPilot Docs on the MicoAir H743](https://ardupilot.org/copter/docs/common-MicoAir743.html).
-After flashing firmware for the first time, use Mission Planner to configure several items:
+After flashing firmware for the first time, use Mission Planner to configure several items. I used a stock firmware with no extra options added or removed (i.e., I didnt need a custom firmware build).
 - Go to Setup tab.
 - Expand the Mandatory Hardware menu item.
   - On Frame Type menu item:
