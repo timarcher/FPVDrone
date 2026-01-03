@@ -185,5 +185,16 @@ I have adjusted these parameters to be about half the default value to make my d
 |BRD_BOOT_DELAY|3000|This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.|
 
 
+## Parameters - Indoor Flight
+To fly indoors, you must fly without GPS, and you need to explicitly configure ArduPilot to not expect GPS or compass data.
+And you can only fly in these flight modes then:
+- Stabilize
+- AltHold
+- Acro
+
+|Parameter Name|Value|Description|
+|---|---|---|
+|GPS1_TYPE|0|Set to 0 to say there is no GPS. This was set to 1 by default above.|
+|COMPASS_USE|0|Set to 0 to say there is no Compass. Yaw will now rely on gyro integration, which is much more stable indoors. This was set to 1 by default above.|
 
 
