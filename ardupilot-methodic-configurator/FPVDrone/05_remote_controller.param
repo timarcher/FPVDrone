@@ -1,5 +1,11 @@
 ARMING_RUDDER,2  # Allow arm or disarm by rudder input.
-FLTMODE_CH,5  # ExpressLRS requires FLTMODE_CH != 5
+FLTMODE_CH,6  # ExpressLRS requires FLTMODE_CH != 5. RC Channel to use for flight mode control. Default is 5, but we have to change it to 6 since ELRS maps channel 5 to a hard-coded channel 5 (AUX1) as a 2-position, 1-bit arming channel for safety and system performance. This is an intentional design feature of ELRS and cannot be changed, regardless of your other radio settings.
+FLTMODE1,5  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.
+FLTMODE2,2  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AltHold.
+FLTMODE3,0  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to Stabilize.
+FLTMODE4,3  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1490, <= 1620. Set to Auto.
+FLTMODE5,6  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.
+FLTMODE6,9  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.
 FS_THR_ENABLE,1  # The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel. Set to Enabled, always RTL. If the GPS position is not usable, the copter will change to Land Mode instead.
 FS_THR_VALUE,975  # The PWM level in microseconds on channel 3 below which throttle failsafe triggers. FS_THR_VALUE must be at least 10 steps lower than RC3_MIN, which is 982.
 RC_FS_TIMEOUT,1  # RC failsafe will trigger this many seconds after loss of RC.
@@ -12,6 +18,10 @@ RC6_OPTION,0  # Do nothing. Function assigned to rc channel 6. For example, we c
 RC7_OPTION,11  # Enable/Disable fence
 RC8_OPTION,300  # Scripting1 for Quiktune
 RC9_OPTION,0  # Do nothing. Function assigned to rc channel 9. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
+RCMAP_PITCH,3
+RCMAP_ROLL,4
+RCMAP_THROTTLE,2
+RCMAP_YAW,1
 RSSI_TYPE,3  # Indicate RSSI is provided by the receiver protocol.
 SERIAL6_BAUD,57  # 57 (57600) is fine. ArduPilot switches it internally to the correct CRSF baud of 400000.
 SERIAL6_PROTOCOL,23  # CRSF RCIN, which should be the default.

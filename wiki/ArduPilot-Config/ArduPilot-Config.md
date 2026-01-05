@@ -173,7 +173,7 @@ I have adjusted these parameters to be about half the default value to make my d
 
 |Parameter Name|Value|Description|
 |---|---|---|
-|WPNAV_SPEED|500|Defines the speed in cm/s which the aircraft will attempt to maintain horizontally during a WP mission.|
+|WPNAV_SPEED|450|Defines the speed in cm/s which the aircraft will attempt to maintain horizontally during a WP mission.|
 |WPNAV_SPEED_UP|150|Defines the speed in cm/s which the aircraft will attempt to maintain while climbing during a WP mission.|
 |WPNAV_SPEED_DN|100|Defines the speed in cm/s which the aircraft will attempt to maintain while descending during a WP mission.|
 |WPNAV_ACCEL|125|Defines the horizontal acceleration in cm/s/s used during missions.|

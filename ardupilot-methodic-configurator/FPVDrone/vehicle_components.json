@@ -3,7 +3,7 @@
     "Components": {
         "Flight Controller": {
             "Product": {
-                "Manufacturer": "ArduPilot,AET,Airvolute,Aocoda-RC-H743Dual,CSKY,GreenSight,Japan Aviation Electronics Industry Ltd.,mRo,ORBITH743,Horizon31,Dheeran labs,Qiotek,Sierra Aerospace,SkySakura",
+                "Manufacturer": "ArduPilot,AET,Airvolute,Aocoda-RC-H743Dual,CSKY,GreenSight,Japan Aviation Electronics Industry Ltd.,Taiphoon,mRo,ORBITH743,Horizon31,Dheeran labs,Qiotek,Sierra Aerospace,SkySakura",
                 "Model": "MicoAir743v2",
                 "Version": "V2",
                 "URL": "https://store.micoair.com/product/micoair743-v2/"
@@ -175,5 +175,5 @@
             "Notes": "We use CRSF telemetry through the receiver."
         }
     },
-    "Program version": "2.9.2"
+    "Program version": "2.9.3"
 }
