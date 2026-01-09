@@ -185,6 +185,20 @@ I have adjusted these parameters to be about half the default value to make my d
 |BRD_BOOT_DELAY|3000|This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.|
 
 
+## Parameters - MicoAir MTF-02P Optical Flow & 6m Range 2IN1 Sensor
+|Parameter Name|Value|Description|
+|---|---|---|
+|SERIAL4_PROTOCOL|1|What protocol Serial4 port should be used for. Lidar and Flow.|
+|SERIAL4_OPTIONS|1024||
+|SERIAL4_BAUD|115|The baud rate used for Serial4. 115200 baud.|
+|FLOW_TYPE|5|Enable optical flow camera.|
+|RNGFND1_TYPE|10|Type of connected rangefinder. Reboot flight controller after setting this for rest of the params to show.|
+|RNGFND1_ORIENT|25||
+|RNGFND1_MIN_CM|2|Minimum distance in centimeters that rangefinder can reliably read.|
+|RNGFND1_MAX_CM|600|Maximum distance in centimeters that rangefinder can reliably read.|
+|RNGFND1_GNDCLEAR|5|Optional - This parameter sets the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.|
+
+
 ## Parameters - Indoor Flight
 To fly indoors, you must fly without GPS, and you need to explicitly configure ArduPilot to not expect GPS or compass data.
 And you can only fly in these flight modes then:
@@ -195,6 +209,6 @@ And you can only fly in these flight modes then:
 |Parameter Name|Value|Description|
 |---|---|---|
 |GPS1_TYPE|0|Set to 0 to say there is no GPS. This was set to 1 by default above.|
-|COMPASS_USE|0|Set to 0 to say there is no Compass. Yaw will now rely on gyro integration, which is much more stable indoors. This was set to 1 by default above.|
+|COMPASS_USE|0|Set to 0 to say there is no compass. Yaw will now rely on gyro integration, which is much more stable indoors. This was set to 1 by default above.|
 
 

@@ -22,8 +22,9 @@ TBS Unify Pro HV 5G8 - Race (SMA) Video Transmitter|[GetFPV](https://www.getfpv.
 |SanDisk 256GB Extreme microSDXC UHS-I Memory Card|[Amazon](https://www.amazon.com/dp/B07FCR3316)|$26|1|$26|
 |Apex RC Products 5 Pack 16mm x 300mm HD Rubberized Battery Straps Non-Slip 3021|[Amazon](https://www.amazon.com/dp/B01F7MUBKY)|$9|1|$9|
 |RC Motor Grip Pliers Propeller Remover Quick Relase Wrench Tool for DJI Phantom 3 and 13XX-23XX Series Motors|[Amazon](https://www.amazon.com/dp/B0756Z82WM)|$17|1|$17|
-
-
+|MicoAir MTF-02P Optical Flow & 6m Range 2IN1 Sensor|[Pyrdrone](https://pyrodrone.com/products/micoair-mtf-02p-optical-flow-6m-range-2in1-sensor?variant=41215026167851)|$22|1|$22|
+|TBS 5G8 RHCP Patch Antenna (SMA) |[Pyrdrone](https://pyrodrone.com/products/tbs-5g8-rhcp-patch-sma)|$17|2|$34|
+|TBS Triumph Stub SMA (RHCP 2PCS) Stubby × 1|[Pyrdrone](https://pyrodrone.com/products/tbs-triumph-stub-smarhcp-2pcs)|$40|1|$40|
 
 
 <!--
