@@ -1,5 +1,5 @@
 ARMING_RUDDER,2  # Allow arm or disarm by rudder input.
-FLTMODE_CH,6  # ExpressLRS requires FLTMODE_CH != 5. RC Channel to use for flight mode control. Default is 5, but we have to change it to 6 since ELRS maps channel 5 to a hard-coded channel 5 (AUX1) as a 2-position, 1-bit arming channel for safety and system performance. This is an intentional design feature of ELRS and cannot be changed, regardless of your other radio settings.
+FLTMODE_CH,6  # ExpressLRS requires FLTMODE_CH != 5
 FLTMODE1,5  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.
 FLTMODE2,2  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AltHold.
 FLTMODE3,0  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to Stabilize.
