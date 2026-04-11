@@ -41,7 +41,7 @@ This page contains details about setting up the electronics used for the Drone.
 - To bind the RadioMaster TX16s transmitter to the ELRS receiver, do the following:
   - Make a new model.
   - On the model setup tab, disable Internal RF, and enable External RF.
-  - On the External RF settings, set the Mode to CRSF. Leave the other defaults such as Baudrate of 400k, Channel Range set to CH1 to CH16, and Receiver set to 0.
+  - On the External RF settings, set the Mode to CRSF. Leave the other defaults such as Baudrate of 921k, Channel Range set to CH1 to CH16, and Receiver set to 0.
   - The transmitter should auto bind to the receiver now since we are using the Binding Phrase.
   - After binding the LED on the receiver will go solid once linked.
   - On your TX16S, go to System → Tools → ExpressLRS (you should already have this Lua script on your SD card if you installed the ELRS firmware pack). This Lua script is the main interface for your Micro Ranger. From here you set packet rate, power, bind, WiFi, etc.
