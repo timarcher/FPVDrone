@@ -16,7 +16,8 @@ This page contains the overall bill of materials/component list that was used to
 |RadioMaster TX16S Mark II MAX Edition 2.4GHz|[Amazon]([https:URL](https://www.amazon.com/gp/product/B0B6Y96J7L/ref=ox_sc_act_title_1))|$470|1|$470|
 |MicoAir743 V2 60A Bluejay 30×30 FC&ESC Stack|[MicoAir](https://store.micoair.com/product/micoair743-v2/)|$86|1|$86|
 |M10G-5883 GPS Module|[MicoAir](https://store.micoair.com/product/m9-m10-gps-module/)|$11|1|$11|
-TBS Unify Pro HV 5G8 - Race (SMA) Video Transmitter|[GetFPV](https://www.getfpv.com/tbs-unify-pro-hv-5g8-race-sma.html)|$39|1|$39|
+|TBS Unify Pro HV 5G8 - Race (SMA) Video Transmitter - this is a smaller one but didnt work as well as next one.|[GetFPV](https://www.getfpv.com/tbs-unify-pro-hv-5g8-race-sma.html)|$39|1|$39|
+|TBS Unify PRO32 DP 3W 5.8GHz Video Transmitter|[Amazon](https://www.amazon.com/dp/B0D6LM9TV8)|$59|1|$59|
 |TBS Triumph 5.8GHz RHCP FPV Antenna Set (SMA Male)|[GetFPV](https://www.getfpv.com/tbs-triumph-5-8ghz-rhcp-fpv-antenna-set-sma.html)|$52|1|$52|
 |HDZero Goggle 2|[HDZero](https://hdzero.us/products/hdzero-goggle-2)|$750|1|$750|
 |SanDisk 256GB Extreme microSDXC UHS-I Memory Card|[Amazon](https://www.amazon.com/dp/B07FCR3316)|$26|1|$26|
