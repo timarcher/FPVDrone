@@ -8,4 +8,3 @@ GPS1_POS_Y,0  # Y position of the second GPS antenna in body frame. Positive Y i
 GPS1_POS_Z,0  # Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.
 GPS1_TYPE,1  # Auto. For M10 modules, ArduPilot is typically able to auto-detect and configure the GPS, so this is the recommended setting.
 SERIAL3_PROTOCOL,5  # Treat the data coming from UART3 as a GPS protocol.
-WPNAV_RADIUS,200  # RTK GPS should allow for precise flying. Value is in centimeters.
