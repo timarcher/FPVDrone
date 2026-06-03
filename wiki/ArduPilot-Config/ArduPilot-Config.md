@@ -47,7 +47,7 @@ These settings are for a 6s battery. Adjust for a 4s battery.
 |BATT_AMP_PERVLT|40.2||
 |BATT_ARM_VOLT|24|Minimum battery voltage required to arm the aircraft.|
 |BATT_CAPACITY|1600|The battery has 1600 mah.|
-|BATT_CRT_VOLT|19.2|Battery voltage that triggers a critical battery failsafe.|
+|BATT_CRT_VOLT|20.4|Battery voltage that triggers a critical battery failsafe.|
 |BATT_CURR_PIN|11||
 |BATT_FS_CRT_ACT|1|Action to perform if the critical battery failsafe is hit. 1 = Land|
 |BATT_FS_LOW_ACT|2|Action to perform if the low battery failsafe is hit. 2 = RTL|

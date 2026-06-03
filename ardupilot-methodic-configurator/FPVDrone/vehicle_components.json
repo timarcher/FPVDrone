@@ -26,7 +26,8 @@
             },
             "Specifications": {
                 "TOW min Kg": 0.5,
-                "TOW max Kg": 0.5
+                "TOW max Kg": 0.5,
+                "Frame class": "Undefined"
             },
             "Notes": ""
         },
@@ -54,8 +55,10 @@
             "Specifications": {
                 "Chemistry": "Lipo",
                 "Volt per cell max": 4.2,
+                "Volt per cell arm": 3.6667,
                 "Volt per cell low": 3.6,
-                "Volt per cell crit": 3.2,
+                "Volt per cell crit": 3.4,
+                "Volt per cell min": 3.2,
                 "Number of cells": 6,
                 "Capacity mAh": 1600
             },
@@ -69,9 +72,13 @@
                 "URL": "https://store.micoair.com/product/micoair743-v2/"
             },
             "Firmware": {},
-            "FC Connection": {
+            "FC->ESC Connection": {
                 "Type": "Main Out",
                 "Protocol": "DShot600"
+            },
+            "ESC->FC Telemetry": {
+                "Type": "None",
+                "Protocol": "None"
             },
             "Notes": ""
         },
@@ -175,5 +182,5 @@
             "Notes": "We use CRSF telemetry through the receiver."
         }
     },
-    "Program version": "2.9.4"
+    "Program version": "3.0.3"
 }

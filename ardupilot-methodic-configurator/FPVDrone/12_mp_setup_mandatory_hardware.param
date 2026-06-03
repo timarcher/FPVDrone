@@ -65,9 +65,9 @@ INS_GYROFFS_Y,-0.00058
 INS_GYROFFS_Z,-0.000218
 MOT_BAT_VOLT_MAX,25.200001  # Battery voltage compensation maximum voltage. Set to 4.2 * cell count.
 MOT_BAT_VOLT_MIN,19.799999  # Battery voltage minimum compensation voltage. Set to 3.3 * cell count.
-MOT_SPIN_ARM,0.05
+MOT_SPIN_ARM,0.03
 MOT_SPIN_MAX,0.95
-MOT_SPIN_MIN,0.09
+MOT_SPIN_MIN,0.055
 MOT_THST_EXPO,0.43
 MOT_THST_HOVER,0.15273
 RC1_MAX,2011

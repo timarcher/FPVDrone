@@ -21,6 +21,7 @@ LAND_SPEED_HIGH,0  # The descent speed for the first stage of landing in cm/s. I
 LOIT_ACC_MAX,420  # Default is 500. Loiter maximum correction acceleration in cm/s/s. Higher values cause the copter to correct position errors more aggressively. This is a big drone so we slow it down a bit.
 LOIT_BRK_ACCEL,225  # Default is 250. Loiter braking acceleration in cm/s/s. Higher values stop the copter more quickly when the stick is centered. This is a big drone so we slow it down a bit.
 LOIT_BRK_DELAY,0.1  # Default value is 1. Loiter brake start delay (in seconds), make the drone break faster when releasing the sticks.
+MAV4_OPTIONS,2  # Dont forward mavlink to/from
 OSD_TYPE,1  # Enable the analog OSD system.
 PILOT_TKOFF_ALT,0  # Altitude that altitude control modes will climb to when a takeoff is triggered with the throttle stick. Leave at 0 for default. Set to 100 to climb to 1m on take-off. Value in centimeters.
 RNGFND1_GNDCLEAR,5  # Optional - This parameter sets the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
@@ -36,13 +37,13 @@ SERIAL2_BAUD,4  # The required baud rate for SmartAudio.
 SERIAL2_OPTIONS,4  # For half-duplex communication, which SmartAudio requires.
 SERIAL2_PROTOCOL,37  # Enable the SmartAudio protocol.
 SERIAL4_BAUD,115  # The baud rate used for Serial4. 115200 baud.
-SERIAL4_OPTIONS,1024
+SERIAL4_OPTIONS,0
 SERIAL4_PROTOCOL,1  # What protocol Serial4 port should be used for. Lidar and Flow.
-VTX_BAND,0  # Band A.
-VTX_CHANNEL,0  # Channel 1.
+VTX_BAND,4  # Race Band
+VTX_CHANNEL,7  # Channel 8.
 VTX_ENABLE,1  # Enable VTX support. Reboot flight controller after setting.
 VTX_OPTIONS,10  # Pitmode until armed and Unlocked options.
-VTX_POWER,25  # Change from 25 to 150mw.
+VTX_POWER,200  # Change from 25 to 100mw.
 WPNAV_ACCEL,125  # Defines the horizontal acceleration in cm/s/s used during missions.
 WPNAV_ACCEL_Z,75  # Defines the vertical acceleration in cm/s/s used during missions.
 WPNAV_SPEED,450  # Defines the speed in cm/s which the aircraft will attempt to maintain during a WP mission.
