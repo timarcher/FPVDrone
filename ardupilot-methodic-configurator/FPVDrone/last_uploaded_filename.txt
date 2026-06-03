@@ -1,1 +1,1 @@
-22_quick_tune_setup.param
+05_board_orientation.param
