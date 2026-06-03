@@ -22,7 +22,7 @@ After flashing firmware for the first time, use Mission Planner to configure sev
     - Press Simple Accel Cal (use this in lieu of Calibrate Accel for large drone or simple bench testing)
     - Docs on accelerometer calibration [can be found here](https://ardupilot.org/copter/docs/common-accelerometer-calibration.html).    
   - On ESC Calibration menu item:
-    - If using Bluejay ESC, it must be set to DShot300/600, otherwise the ESC will not be able to recognize the signal.
+    - If using Bluejay ESC, it must be set to DShot300, otherwise the ESC will not be able to recognize the signal.
   - On Compass menu item:
     - Press start on the Onboard Mag Calibration, calibrate, and reboot. Docs on compass calibration [can be found here](https://ardupilot.org/copter/docs/common-compass-calibration-in-mission-planner.html).
   - On Radio Calibration menu item:

@@ -42,7 +42,7 @@ VTX_BAND,4  # Race Band
 VTX_CHANNEL,7  # Channel 8.
 VTX_ENABLE,1  # Enable VTX support. Reboot flight controller after setting.
 VTX_OPTIONS,10  # Pitmode until armed and Unlocked options.
-VTX_POWER,200  # Change from 25 to 100mw.
+VTX_POWER,100  # Change from 25 to 100mw.
 WPNAV_ACCEL,125  # Defines the horizontal acceleration in cm/s/s used during missions.
 WPNAV_ACCEL_Z,75  # Defines the vertical acceleration in cm/s/s used during missions.
 WPNAV_SPEED,450  # Defines the speed in cm/s which the aircraft will attempt to maintain during a WP mission.
