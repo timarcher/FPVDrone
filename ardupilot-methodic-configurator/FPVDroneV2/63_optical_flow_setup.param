@@ -1,23 +1,8 @@
-# STUB - Template defaults. DO NOT UPLOAD without review.
-# FLOW_TYPE=0 here would DISABLE optical flow (currently FLOW_TYPE=5 in 15_general_configuration.param).
-# RC8_OPTION=0 would DISABLE the QuikTune script (currently RC8_OPTION=300).
-# EK3_SRC settings would switch the EKF from GNSS to optical flow as position source.
-EK3_FLOW_DELAY,10
-EK3_SRC_OPTIONS,1
-EK3_SRC1_POSXY,3
-EK3_SRC1_POSZ,1
-EK3_SRC1_VELXY,3
-EK3_SRC1_VELZ,3
-EK3_SRC1_YAW,1
-EK3_SRC2_POSXY,0
-EK3_SRC2_POSZ,1
-EK3_SRC2_VELXY,0
-EK3_SRC2_VELZ,0
-EK3_SRC2_YAW,0
-FLOW_ORIENT_YAW,0
-FLOW_POS_X,0
-FLOW_POS_Y,0
-FLOW_POS_Z,0
-FLOW_TYPE,0
-RC8_OPTION,0
-RC9_OPTION,0
+# Optical flow as EKF3 velocity backup (SRC2). GPS remains primary (SRC1 unchanged).
+# EK3_SRC numbering: 0=None, 1=Baro, 3=GPS, 5=OpticalFlow (VELXY only)
+EK3_FLOW_DELAY,10  # Measurement latency compensation in ms (default 10)
+EK3_SRC2_POSXY,0  # None — optical flow cannot provide absolute position
+EK3_SRC2_POSZ,1  # Baro — altitude maintained as backup
+EK3_SRC2_VELXY,5  # Optical Flow horizontal velocity backup
+EK3_SRC2_VELZ,0  # None
+EK3_SRC2_YAW,0  # None

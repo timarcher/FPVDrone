@@ -1,4 +1,3 @@
-# STUB - Template defaults. Fill in after performing optical flow calibration flight.
-FLOW_FXSCALER,0
-FLOW_FYSCALER,0
-FLOW_ORIENT_YAW,0
+# Optical flow calibration results from in-flight calibration.
+FLOW_FXSCALER,-36  # X-axis scale correction (calibrated; template default=0)
+FLOW_FYSCALER,-118  # Y-axis scale correction (calibrated; template default=0)

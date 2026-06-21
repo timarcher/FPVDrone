@@ -176,9 +176,11 @@ When the last uploaded file is ≤ 44 and files 45–66 exist, evaluate each fil
 - Recommend skipping unless doing advanced frequency response analysis
 
 **File 60 (position controller):**
-- `ANGLE_MAX`: Set to 4500 (45°) for FPV cinewhoop; template has 3000 which is too restrictive
-- `LOIT_BRK_DELAY`: Template sets 0.5; if file 16 set it to 0.1 (faster), KEEP 0.1
-- Everything else can be uploaded as-is or with minor adjustments
+- `ANGLE_MAX`: Template has 3000 (too restrictive). Conservative pilot: 4000 (40°). Aggressive: 4500 (45°). Match pilot skill.
+- `LOIT_BRK_DELAY`: Template sets 0.5; if file 16 set it to 0.1 (more responsive), KEEP 0.1 by omitting or overriding
+- `WP_NAVALT_MIN,2`: Add for mission safety (prevents horizontal nav below 2m)
+- Conservative pilot profile: reduce WPNAV_SPEED, PILOT_ACCEL_Z, PILOT_SPEED_DN vs AMC defaults
+- Check for duplicates vs file 16: LOIT_BRK_DELAY, LOIT_BRK_JERK, WPNAV_SPEED_UP/DN already set in f16
 
 **File 61 (guided operation):** Upload as-is.
 
@@ -190,8 +192,11 @@ When the last uploaded file is ≤ 44 and files 45–66 exist, evaluate each fil
 **File 63 (optical flow setup) — MODIFY BEFORE UPLOADING:**
 - Template sets `FLOW_TYPE=0` (DISABLES optical flow sensor!)
 - If optical flow hardware is present (FLOW_TYPE=5 in earlier files), do NOT set FLOW_TYPE=0
-- Replace content with GPS-primary + optical-flow-backup EKF source configuration:
-  `EK3_SRC2_POSXY=5`, `EK3_SRC2_VELXY=5`, keep `FLOW_TYPE=5`
+- Replace content with ONLY EKF backup source config. FLOW_TYPE/POS already set in file 15 — do NOT repeat.
+- EK3_SRC numbering (ArduCopter 4.6.3 confirmed): POSXY/VELXY: 3=GPS, 5=OpticalFlow; POSZ: 1=Baro; All: 0=None
+  - `EK3_SRC2_POSXY=0` (None — optical flow cannot provide absolute position)
+  - `EK3_SRC2_VELXY=5` (OpticalFlow horizontal velocity backup — confirmed value is 5, NOT 2)
+  - `EK3_SRC2_POSZ=1` (Baro)
 - Remove any `RC8_OPTION=0` or `RC9_OPTION=0` lines that would reset switch assignments
 
 **File 64 (optical flow results) — MODIFY BEFORE UPLOADING:**
@@ -203,13 +208,15 @@ When the last uploaded file is ≤ 44 and files 45–66 exist, evaluate each fil
 - Switches optical flow to primary, GPS to secondary — risky for outdoor flying
 - If optical flow as backup was configured in file 63, skip file 65
 
-**File 66 (everyday use) — ADD these items to existing content:**
+**File 66 (everyday use) — ADD these items to existing content (minimum set):**
 - `FLTMODE4,3` — restore from AutoTune (15) to Auto or other useful mode
-- `PSC_ACCZ_P` = final `MOT_THST_HOVER` value
-- `PSC_ACCZ_I` = 2 × final `MOT_THST_HOVER` value
-- `ATC_THR_MIX_MAX,0.5` — for Loiter/AltHold priority; keep 0.9 for mainly-manual flying
 - `SERIAL7_PROTOCOL,-1` — if no UART ESC telemetry cable and using bidirectional DShot
 - `QUIK_ENABLE,0` — already required, verify it's there
+- `RTL_ALT,500` — 5m RTL altitude (default 1500=15m is excessive for near-pilot FPV)
+- `RTL_CLIMB_MIN,100` — rise 1m before horizontal RTL (obstacle clearance)
+- `PILOT_Y_RATE,45` — if default 202.5 is too fast; conservative pilot: use 45 deg/s
+- **Before adding any param to file 66: check if already set earlier in the sequence with the same value. Only include genuine changes.**
+- PSC_ACCZ_P/I: only update if diff > 5% from current value (stale early-estimate vs final hover)
 
 ---
 
@@ -266,6 +273,10 @@ If yes:
 | `COMPASS_ORIENT` | 6 (Yaw270) | MagFit result |
 | `FLOW_FXSCALER` | -36 | Calibrated |
 | `FLOW_FYSCALER` | -118 | Calibrated |
+| `ANGLE_MAX` | 4000 | Conservative pilot (40°) |
+| `PILOT_Y_RATE` | 45 | Conservative yaw rate |
+| `RTL_ALT` | 500 | 5m for near-pilot FPV |
+| `RTL_CLIMB_MIN` | 100 | Rise 1m before horizontal RTL |
 | `MOT_THST_EXPO` | 0.50 | Ducted props |
 | `AUTOTUNE_AGGR` | 0.1 | Max aggressiveness |
 | `GPS1_RATE_MS` | 200 | 5Hz (ArduPilot recommended max) |
@@ -274,7 +285,7 @@ If yes:
 
 | Parameter | Recommended | Notes |
 |---|---|---|
-| `ANGLE_MAX` | 4500 (45°) | 30° is too restrictive for FPV |
+| `ANGLE_MAX` | 4000–4500 | 3000 too restrictive; match pilot skill (this pilot: 4000) |
 | `MOT_THST_EXPO` | 0.45–0.55 | Lower for ducted props; 0.65 is too high |
 | `MOT_SPIN_ARM` | 0.02–0.04 | Just barely spins |
 | `MOT_SPIN_MIN` | 0.05–0.08 | Above arm, below flight |
@@ -322,3 +333,33 @@ If yes:
 
 10. **Compass ORIENT can change from initial calibration to MagFit result** — this is normal
     and MagFit's value is more accurate. Verify heading post-MagFit against known compass direction.
+
+11. **Conservative pilot profile for this drone**: ANGLE_MAX=4000, PILOT_Y_RATE=45 deg/s,
+    WPNAV_SPEED≤500, PILOT_SPEED_DN≤150. When proposing params, default to gentle values
+    and prioritize stability and reaction time over responsiveness.
+
+12. **No unnecessary duplicate params across files**: Before adding a param to any file, check
+    if already set in an earlier file with the same value. Only include a param when its value
+    is genuinely changing from what was set earlier. Key anchors: FLOW_TYPE/POS in file 15;
+    LOIT/WPNAV in file 16. Intentional overrides (value changes) are always OK.
+
+13. **EK3_SRC2_VELXY=5 for optical flow** (not 2): The correct source value for OpticalFlow
+    horizontal velocity in ArduCopter 4.6.3 is 5, not 2. EK3_SRC2_POSXY must be 0 (None)
+    because optical flow cannot provide absolute position.
+
+14. **PSC_ACCZ_P/I must use actual MOT_THST_HOVER, not generic forum values**: xfacta and
+    others often recommend PSC_ACCZ_P=0.3, I=0.6. These apply to ~30% hover throttle vehicles.
+    Formula: P = MOT_THST_HOVER, I = 2 × MOT_THST_HOVER. For this drone (14.4% hover):
+    P=0.144, I=0.289. Never apply generic xfacta values without checking actual hover throttle.
+
+15. **PILOT_Y_RATE formula (0.005×ATC_ACCEL_Y_MAX) breaks for AutoTuned vehicles**: On a
+    heavily-tuned small quad, ATC_ACCEL_Y_MAX=387011 centideg/s² gives PILOT_Y_RATE=1935 deg/s
+    (nonsensical). Use a fixed conservative value (45 deg/s for this pilot) instead of the formula.
+
+16. **SysID skip files and other dangerous template files should be comment-only**: Replace
+    content with a plain comment warning. A comment-only file uploaded via AMC applies zero
+    param changes — completely safe. Key skip files: 50–57 (SysID), 65 (optical flow primary).
+
+17. **Safety double-check before any upload**: Verify no RC_OPTION=0 (removes switch function),
+    FLOW_TYPE≠0 (disables sensor), FLTMODE≠15 (AutoTune stuck on), ATC_ANG_*_P≠4.5 (SysID
+    template). Always regenerate complete.param after all uploads. Errors have real consequences.
