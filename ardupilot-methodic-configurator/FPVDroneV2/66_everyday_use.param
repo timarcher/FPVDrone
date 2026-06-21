@@ -1,0 +1,2 @@
+LOG_BITMASK,2277374  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
+QUIK_ENABLE,0  # Disable the VTOL-Quicktune lua script we used earlier, no longer needed.
