@@ -16,7 +16,7 @@ AHRS_GPS_GAIN,1
 AHRS_GPS_MINSATS,6
 AHRS_GPS_USE,1
 AHRS_OPTIONS,0
-AHRS_ORIENTATION,0
+AHRS_ORIENTATION,0  # Point forward in the direction of travel
 AHRS_RP_P,0.2
 AHRS_TRIM_X,-0.026791
 AHRS_TRIM_Y,-0.01597
@@ -26,78 +26,78 @@ AHRS_YAW_P,0.2
 AIS_TYPE,0
 ANGLE_MAX,3000
 ARMING_ACCTHRESH,0.75
-ARMING_CHECK,1
+ARMING_CHECK,1  # Normal state for everyday use
 ARMING_CRSDP_IGN,0
 ARMING_MAGTHRESH,100
 ARMING_MIS_ITEMS,0
 ARMING_NEED_LOC,0
 ARMING_OPTIONS,0
-ARMING_RUDDER,2
+ARMING_RUDDER,2  # Allow arm or disarm by rudder input.
 ARSPD_ENABLE,0
-ATC_ACCEL_P_MAX,343785.90625
-ATC_ACCEL_R_MAX,526010.3125
-ATC_ACCEL_Y_MAX,77811.109375
+ATC_ACCEL_P_MAX,338304.5  # Derived from vehicle component editor propeller size
+ATC_ACCEL_R_MAX,495016.8125  # Derived from vehicle component editor propeller size
+ATC_ACCEL_Y_MAX,77811.109375  # Derived from vehicle component editor propeller size
 ATC_ANG_LIM_TC,1
-ATC_ANG_PIT_P,30.871704
-ATC_ANG_RLL_P,35.631699
-ATC_ANG_YAW_P,15.576117
+ATC_ANG_PIT_P,29.173761  # higher value mean a tighter tune
+ATC_ANG_RLL_P,32.068527  # higher value mean a tighter tune
+ATC_ANG_YAW_P,15.576117  # higher value mean a tighter tune
 ATC_ANGLE_BOOST,1
-ATC_INPUT_TC,0.2
+ATC_INPUT_TC,0.2  # Attitude control input time constant. Low numbers lead to sharper response, higher numbers to softer response. 0.5:Very Soft,0.2:Soft,0.15:Medium,0.1:Crisp,0.05:Very Crisp
 ATC_LAND_P_MULT,1
 ATC_LAND_R_MULT,1
 ATC_LAND_Y_MULT,1
-ATC_RAT_PIT_D,0.003929
+ATC_RAT_PIT_D,0.003625  # Setting value after running QuickTune LUA script
 ATC_RAT_PIT_D_FF,0
 ATC_RAT_PIT_FF,0
-ATC_RAT_PIT_FLTD,50.5
-ATC_RAT_PIT_FLTE,0
-ATC_RAT_PIT_FLTT,50.5
-ATC_RAT_PIT_I,0.230567
+ATC_RAT_PIT_FLTD,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_PIT_FLTE,0  # Initial value, will be improved at a later step
+ATC_RAT_PIT_FLTT,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_PIT_I,0.223185  # Setting value after running QuickTune LUA script
 ATC_RAT_PIT_IMAX,0.5
 ATC_RAT_PIT_NEF,0
 ATC_RAT_PIT_NTF,0
-ATC_RAT_PIT_P,0.230567
+ATC_RAT_PIT_P,0.223185  # Setting value after running QuickTune LUA script
 ATC_RAT_PIT_PDMX,0
 ATC_RAT_PIT_SMAX,0
-ATC_RAT_RLL_D,0.00175
+ATC_RAT_RLL_D,0.001712  # Setting value after running QuickTune LUA script
 ATC_RAT_RLL_D_FF,0
 ATC_RAT_RLL_FF,0
-ATC_RAT_RLL_FLTD,50.5
-ATC_RAT_RLL_FLTE,0
-ATC_RAT_RLL_FLTT,50.5
-ATC_RAT_RLL_I,0.102966
+ATC_RAT_RLL_FLTD,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_RLL_FLTE,0  # Initial value, will be improved at a later step
+ATC_RAT_RLL_FLTT,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_RLL_I,0.101431  # Setting value after running QuickTune LUA script
 ATC_RAT_RLL_IMAX,0.5
 ATC_RAT_RLL_NEF,0
 ATC_RAT_RLL_NTF,0
-ATC_RAT_RLL_P,0.102966
+ATC_RAT_RLL_P,0.101431  # Setting value after running QuickTune LUA script
 ATC_RAT_RLL_PDMX,0
 ATC_RAT_RLL_SMAX,0
-ATC_RAT_YAW_D,0.00883
+ATC_RAT_YAW_D,0.00883  # if == to AUTOTUNE_MIN_D, autotune failed
 ATC_RAT_YAW_D_FF,0
 ATC_RAT_YAW_FF,0
-ATC_RAT_YAW_FLTD,25.25
-ATC_RAT_YAW_FLTE,3.317102
-ATC_RAT_YAW_FLTT,50.5
-ATC_RAT_YAW_I,0.018796
+ATC_RAT_YAW_FLTD,25.25  # Use INS_GYRO_FILTER / 4 as a first guess
+ATC_RAT_YAW_FLTE,3.317102  # Initial value, will be improved at a later step
+ATC_RAT_YAW_FLTT,50.5  # INS_GYRO_FILTER / 2
+ATC_RAT_YAW_I,0.018796  # Setting value after running QuickTune LUA script
 ATC_RAT_YAW_IMAX,0.5
 ATC_RAT_YAW_NEF,0
 ATC_RAT_YAW_NTF,0
-ATC_RAT_YAW_P,0.187958
+ATC_RAT_YAW_P,0.187958  # Setting value after running QuickTune LUA script
 ATC_RAT_YAW_PDMX,0
 ATC_RAT_YAW_SMAX,0
-ATC_RATE_FF_ENAB,1
+ATC_RATE_FF_ENAB,1  # Restore value now that system identification is done
 ATC_RATE_P_MAX,0
 ATC_RATE_R_MAX,0
 ATC_RATE_Y_MAX,0
 ATC_SLEW_YAW,6000
 ATC_THR_G_BOOST,0
-ATC_THR_MIX_MAN,0.5
-ATC_THR_MIX_MAX,0.5
+ATC_THR_MIX_MAN,0.5  # Because ALTHOLD flight mode was used for more than 30 seconds to correctly learn the MOT_THST_HOVER value
+ATC_THR_MIX_MAX,0.9  # Maximize attitude control authority at high throttle
 ATC_THR_MIX_MIN,0.1
 AUTO_OPTIONS,0
-AUTOTUNE_AGGR,0.1
-AUTOTUNE_AXES,3
-AUTOTUNE_MIN_D,0.0005
+AUTOTUNE_AGGR,0.1  # Autotune Aggressiveness. .1=agressive, .075=medium, .05=weak. Default is .1
+AUTOTUNE_AXES,3  # Autotune roll and pitch axis
+AUTOTUNE_MIN_D,0.0005  # Using default
 AVD_ENABLE,0
 AVOID_ACCEL_MAX,3
 AVOID_ALT_MIN,0
@@ -119,7 +119,7 @@ BARO_OPTIONS,0
 BARO_PRIMARY,0
 BARO_PROBE_EXT,0
 BARO1_DEVID,816897
-BARO1_GND_PRESS,99181.046875
+BARO1_GND_PRESS,99308.578125
 BARO1_WCF_ENABLE,0
 BARO2_DEVID,0
 BARO2_GND_PRESS,0
@@ -128,26 +128,26 @@ BARO3_DEVID,0
 BARO3_GND_PRESS,0
 BARO3_WCF_ENABLE,0
 BATT_AMP_OFFSET,0
-BATT_AMP_PERVLT,40.200001
+BATT_AMP_PERVLT,40.200001  # Number of amps that a 1V reading on the current sensor corresponds to. From MicoAir743v2 docs.
 BATT_ARM_MAH,0
-BATT_ARM_VOLT,22.0002
-BATT_CAPACITY,1600
-BATT_CRT_MAH,0
-BATT_CRT_VOLT,20.4
-BATT_CURR_PIN,11
-BATT_FS_CRT_ACT,1
-BATT_FS_LOW_ACT,2
-BATT_FS_VOLTSRC,0
-BATT_LOW_MAH,0
+BATT_ARM_VOLT,22.0002  # Only arm above this voltage, to avoid taking off with insufficient battery capacity
+BATT_CAPACITY,1600  # Total battery capacity specified in the component editor
+BATT_CRT_MAH,0  # Battery capacity at which the critical battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
+BATT_CRT_VOLT,20.4  # Critical failsafe voltage x nr. of cells
+BATT_CURR_PIN,11  # Based on MicoAir docs
+BATT_FS_CRT_ACT,1  # Land ASAP
+BATT_FS_LOW_ACT,2  # Return and land at home or rally point
+BATT_FS_VOLTSRC,0  # Let the firmware handle the nasty business of variable and battery dependent internal resistance
+BATT_LOW_MAH,0  # Battery capacity at which the low battery failsafe is triggered. Set to 0 to disable battery remaining failsafe.
 BATT_LOW_TIMER,10
-BATT_LOW_VOLT,21.6
-BATT_MONITOR,4
+BATT_LOW_VOLT,21.6  # Low failsafe voltage x nr. of cells
+BATT_MONITOR,4  # Selected in component editor window
 BATT_OPTIONS,0
 BATT_SERIAL_NUM,-1
 BATT_VLT_OFFSET,0
-BATT_VOLT_MULT,21.120001
-BATT_VOLT_PIN,10
-BATT2_MONITOR,0
+BATT_VOLT_MULT,21.120001  # Used to convert the voltage sensing pin reading to the actual battery voltage. From MicoAir743v2 docs.
+BATT_VOLT_PIN,10  # Based on MicoAir docs
+BATT2_MONITOR,0  # No second battery monitor
 BATT3_MONITOR,0
 BATT4_MONITOR,0
 BATT5_MONITOR,0
@@ -156,11 +156,11 @@ BATT7_MONITOR,0
 BATT8_MONITOR,0
 BATT9_MONITOR,0
 BCN_TYPE,0
-BRD_BOOT_DELAY,3000
+BRD_BOOT_DELAY,3000  # This adds a delay in milliseconds to boot to ensure peripherals initialise fully. Value in milliseconds.
 BRD_OPTIONS,1
 BRD_RTC_TYPES,1
-BRD_RTC_TZ_MIN,0
-BRD_SAFETY_DEFLT,0
+BRD_RTC_TZ_MIN,0  # UTC Time Zone. Adds offset in +- minutes from UTC to calculate local time.
+BRD_SAFETY_DEFLT,0  # There is no safety switch on the Here4 GPS so we disable it. (BRD_SAFETYENABLE in older firmware versions)|
 BRD_SAFETY_MASK,16368
 BRD_SAFETYOPTION,3
 BRD_SD_FENCE,0
@@ -189,15 +189,15 @@ COMPASS_DEV_ID5,0
 COMPASS_DEV_ID6,0
 COMPASS_DEV_ID7,0
 COMPASS_DEV_ID8,0
-COMPASS_DIA_X,1
-COMPASS_DIA_Y,1
-COMPASS_DIA_Z,1
-COMPASS_DIA2_X,1
-COMPASS_DIA2_Y,1
-COMPASS_DIA2_Z,1
-COMPASS_DIA3_X,1
-COMPASS_DIA3_Y,1
-COMPASS_DIA3_Z,1
+COMPASS_DIA_X,1  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_DIA_Y,1  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_DIA_Z,1  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_DIA2_X,1  # Copied from the connected flight controller
+COMPASS_DIA2_Y,1  # Copied from the connected flight controller
+COMPASS_DIA2_Z,1  # Copied from the connected flight controller
+COMPASS_DIA3_X,1  # Copied from the connected flight controller
+COMPASS_DIA3_Y,1  # Copied from the connected flight controller
+COMPASS_DIA3_Z,1  # Copied from the connected flight controller
 COMPASS_DISBLMSK,0
 COMPASS_ENABLE,1
 COMPASS_EXTERN2,0
@@ -205,73 +205,73 @@ COMPASS_EXTERN3,0
 COMPASS_EXTERNAL,1
 COMPASS_FLTR_RNG,0
 COMPASS_LEARN,0
-COMPASS_MOT_X,0
-COMPASS_MOT_Y,0
-COMPASS_MOT_Z,0
-COMPASS_MOT2_X,0
-COMPASS_MOT2_Y,0
-COMPASS_MOT2_Z,0
-COMPASS_MOT3_X,0
-COMPASS_MOT3_Y,0
-COMPASS_MOT3_Z,0
-COMPASS_MOTCT,0
-COMPASS_ODI_X,0
-COMPASS_ODI_Y,0
-COMPASS_ODI_Z,0
-COMPASS_ODI2_X,0
-COMPASS_ODI2_Y,0
-COMPASS_ODI2_Z,0
-COMPASS_ODI3_X,0
-COMPASS_ODI3_Y,0
-COMPASS_ODI3_Z,0
+COMPASS_MOT_X,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_MOT_Y,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_MOT_Z,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_MOT2_X,0  # Copied from the connected flight controller
+COMPASS_MOT2_Y,0  # Copied from the connected flight controller
+COMPASS_MOT2_Z,0  # Copied from the connected flight controller
+COMPASS_MOT3_X,0  # Copied from the connected flight controller
+COMPASS_MOT3_Y,0  # Copied from the connected flight controller
+COMPASS_MOT3_Z,0  # Copied from the connected flight controller
+COMPASS_MOTCT,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_ODI_X,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_ODI_Y,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_ODI_Z,0  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_ODI2_X,0  # Copied from the connected flight controller
+COMPASS_ODI2_Y,0  # Copied from the connected flight controller
+COMPASS_ODI2_Z,0  # Copied from the connected flight controller
+COMPASS_ODI3_X,0  # Copied from the connected flight controller
+COMPASS_ODI3_Y,0  # Copied from the connected flight controller
+COMPASS_ODI3_Z,0  # Copied from the connected flight controller
 COMPASS_OFFS_MAX,1800
-COMPASS_OFS_X,279.429504
-COMPASS_OFS_Y,30.231573
-COMPASS_OFS_Z,-10.140164
-COMPASS_OFS2_X,0
-COMPASS_OFS2_Y,0
-COMPASS_OFS2_Z,0
-COMPASS_OFS3_X,0
-COMPASS_OFS3_Y,0
-COMPASS_OFS3_Z,0
+COMPASS_OFS_X,279.429504  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_OFS_Y,30.231573  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_OFS_Z,-10.140164  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_OFS2_X,0  # Copied from the connected flight controller
+COMPASS_OFS2_Y,0  # Copied from the connected flight controller
+COMPASS_OFS2_Z,0  # Copied from the connected flight controller
+COMPASS_OFS3_X,0  # Copied from the connected flight controller
+COMPASS_OFS3_Y,0  # Copied from the connected flight controller
+COMPASS_OFS3_Z,0  # Copied from the connected flight controller
 COMPASS_OPTIONS,0
-COMPASS_ORIENT,2
-COMPASS_ORIENT2,0
-COMPASS_ORIENT3,0
+COMPASS_ORIENT,2  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_ORIENT2,0  # Copied from the connected flight controller
+COMPASS_ORIENT3,0  # Copied from the connected flight controller
 COMPASS_PMOT_EN,0
 COMPASS_PRIO1_ID,855305
 COMPASS_PRIO2_ID,855297
 COMPASS_PRIO3_ID,0
-COMPASS_SCALE,1.024439
-COMPASS_SCALE2,0
-COMPASS_SCALE3,0
-COMPASS_USE,1
-COMPASS_USE2,0
+COMPASS_SCALE,1.024439  # Valued provided by the MAGFit tool https://firmware.ardupilot.org/Tools/WebTools/MAGFit/
+COMPASS_SCALE2,0  # Copied from the connected flight controller
+COMPASS_SCALE3,0  # Copied from the connected flight controller
+COMPASS_USE,1  # Use the external herelink compass.
+COMPASS_USE2,0  # Disable the internal compass, it seems to be much less accurate.
 COMPASS_USE3,1
 CUST_ROT_ENABLE,0
 DEV_OPTIONS,0
-DISARM_DELAY,4
+DISARM_DELAY,4  # Lowered for quicker landing detection. On this small drone it bounces around after landing.
 EAHRS_TYPE,0
 EFI_TYPE,0
 EK3_ABIAS_P_NSE,0.02
 EK3_ACC_BIAS_LIM,1
-EK3_ACC_P_NSE,0.35
+EK3_ACC_P_NSE,0.35  # higher value -> trust accelerometer less, compared to other sources
 EK3_AFFINITY,0
-EK3_ALT_M_NSE,2
+EK3_ALT_M_NSE,2  # lower value -> trust baro more, compared to other sources
 EK3_BCN_DELAY,50
 EK3_BCN_I_GTE,500
 EK3_BCN_M_NSE,1
 EK3_BETA_MASK,0
 EK3_CHECK_SCALE,100
-EK3_DRAG_BCOEF_X,0
-EK3_DRAG_BCOEF_Y,0
+EK3_DRAG_BCOEF_X,0  # Windspeed estimation disabled
+EK3_DRAG_BCOEF_Y,0  # Windspeed estimation disabled
 EK3_DRAG_M_NSE,0.5
-EK3_DRAG_MCOEF,0
+EK3_DRAG_MCOEF,0  # Windspeed estimation disabled
 EK3_EAS_I_GATE,400
 EK3_EAS_M_NSE,1.4
 EK3_ENABLE,1
 EK3_ERR_THRESH,0.2
-EK3_FLOW_DELAY,10
+EK3_FLOW_DELAY,10  # Measurement latency compensation in ms (default 10)
 EK3_FLOW_I_GATE,300
 EK3_FLOW_M_NSE,0.25
 EK3_FLOW_USE,1
@@ -313,12 +313,12 @@ EK3_SRC1_POSXY,3
 EK3_SRC1_POSZ,1
 EK3_SRC1_VELXY,3
 EK3_SRC1_VELZ,3
-EK3_SRC1_YAW,1
-EK3_SRC2_POSXY,0
-EK3_SRC2_POSZ,1
-EK3_SRC2_VELXY,5
-EK3_SRC2_VELZ,0
-EK3_SRC2_YAW,0
+EK3_SRC1_YAW,1  # Compass
+EK3_SRC2_POSXY,0  # None — optical flow cannot provide absolute position
+EK3_SRC2_POSZ,1  # Baro — altitude maintained as backup
+EK3_SRC2_VELXY,5  # Optical Flow horizontal velocity backup
+EK3_SRC2_VELZ,0  # None
+EK3_SRC2_YAW,0  # None
 EK3_SRC3_POSXY,0
 EK3_SRC3_POSZ,1
 EK3_SRC3_VELXY,0
@@ -338,16 +338,16 @@ EK3_YAW_I_GATE,300
 EK3_YAW_M_NSE,0.5
 ESC_CALIBRATION,0
 ESC_TLM_MAV_OFS,0
-FENCE_ACTION,4
-FENCE_ALT_MAX,30
-FENCE_ALT_MIN,-10
-FENCE_AUTOENABLE,0
-FENCE_ENABLE,1
-FENCE_MARGIN,3
+FENCE_ACTION,4  # 4 = Brake or Land. Set to 0 for report only.
+FENCE_ALT_MAX,30  # Maximum altitude allowed before geofence triggers. Value is in meters. I set to 30 when initially testing drone.
+FENCE_ALT_MIN,-10  # Minimum altitude allowed before geofence triggers. Value is in meters.
+FENCE_AUTOENABLE,0  # Auto-enable of fences. Set to Disabled.
+FENCE_ENABLE,1  # Allows you to enable (1) or disable (0) the fence functionality.
+FENCE_MARGIN,3  # Distance that autopilot's should maintain from the fence to avoid a breach. Value is in meters.
 FENCE_OPTIONS,0
-FENCE_RADIUS,100
+FENCE_RADIUS,100  # Circle fence radius which when breached will cause an RTL. Value is in meters.
 FENCE_TOTAL,0
-FENCE_TYPE,7
+FENCE_TYPE,7  # Bitmask. Set to Max Altitude, Circle Centered on Home, and Inclusion/Exclusion Circles+Polygons
 FFT_ENABLE,0
 FHLD_BRAKE_RATE,8
 FHLD_FILT_HZ,5
@@ -367,25 +367,25 @@ FILT7_TYPE,0
 FILT8_TYPE,0
 FLIGHT_OPTIONS,0
 FLOW_ADDR,0
-FLOW_FXSCALER,-36
-FLOW_FYSCALER,-118
+FLOW_FXSCALER,-36  # X-axis scale correction (calibrated; template default=0)
+FLOW_FYSCALER,-118  # Y-axis scale correction (calibrated; template default=0)
 FLOW_ORIENT_YAW,0
 FLOW_POS_X,0
 FLOW_POS_Y,0
 FLOW_POS_Z,0
-FLOW_TYPE,5
-FLTMODE_CH,6
+FLOW_TYPE,5  # Enable optical flow camera.
+FLTMODE_CH,6  # RC Channel to use for flight mode control. Default is 5.
 FLTMODE_GCSBLOCK,0
-FLTMODE1,5
-FLTMODE2,2
-FLTMODE3,0
-FLTMODE4,15
-FLTMODE5,6
-FLTMODE6,9
+FLTMODE1,5  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.
+FLTMODE2,2  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AltHold.
+FLTMODE3,0  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to Auto (For running missions).
+FLTMODE4,3  # Restore Auto mode — file 14 set this to AutoTune (15)
+FLTMODE5,6  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.
+FLTMODE6,9  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.
 FOLL_ENABLE,0
 FORMAT_VERSION,120
-FRAME_CLASS,1
-FRAME_TYPE,1
+FRAME_CLASS,1  # Quadcopter
+FRAME_TYPE,1  # X type
 FRSKY_DNLINK_ID,27
 FRSKY_DNLINK1_ID,20
 FRSKY_DNLINK2_ID,7
@@ -400,14 +400,14 @@ FS_EKF_THRESH,0.8
 FS_GCS_ENABLE,0
 FS_GCS_TIMEOUT,5
 FS_OPTIONS,16
-FS_THR_ENABLE,1
-FS_THR_VALUE,975
+FS_THR_ENABLE,1  # The throttle failsafe allows you to configure a software failsafe activated by a setting on the throttle input channel. Set to Enabled, always RTL. If the GPS position is not usable, the copter will change to Land Mode instead.
+FS_THR_VALUE,975  # The PWM level in microseconds on channel 3 below which throttle failsafe triggers. FS_THR_VALUE must be at least 10 steps lower than RC3_MIN, which is 982.
 FS_VIBE_ENABLE,1
 GCS_PID_MASK,0
 GEN_TYPE,0
 GND_EFFECT_COMP,1
-GPS_AUTO_CONFIG,1
-GPS_AUTO_SWITCH,1
+GPS_AUTO_CONFIG,1  # Default
+GPS_AUTO_SWITCH,1  # 1:UseBest selects the GPS with highest status, if both are equal the GPS with highest satellite count is used 4:Use primary if 3D fix or better, will revert to 'UseBest' behaviour if 3D fix is lost on primary. 2: Blend
 GPS_BLEND_MASK,5
 GPS_DRV_OPTIONS,0
 GPS_HDOP_GOOD,140
@@ -421,13 +421,13 @@ GPS_SBAS_MODE,2
 GPS_SBP_LOGMASK,-256
 GPS1_COM_PORT,1
 GPS1_DELAY_MS,0
-GPS1_GNSS_MODE,0
+GPS1_GNSS_MODE,0  # Set to allow all
 GPS1_MB_TYPE,0
-GPS1_POS_X,0
-GPS1_POS_Y,0
-GPS1_POS_Z,0
+GPS1_POS_X,0  # X position of the second GPS antenna in body frame. Positive X is forward of the origin. Units in meters.
+GPS1_POS_Y,0  # Y position of the second GPS antenna in body frame. Positive Y is to the right of the origin. Units in meters.
+GPS1_POS_Z,0  # Z position of the second GPS antenna in body frame. Positive Z is down from the origin. Units in meters.
 GPS1_RATE_MS,200
-GPS1_TYPE,1
+GPS1_TYPE,1  # Auto. For M10 modules, ArduPilot is typically able to auto-detect and configure the GPS, so this is the recommended setting.
 GPS2_TYPE,0
 GRIP_ENABLE,0
 GUID_OPTIONS,0
@@ -441,10 +441,10 @@ INS_ACC2_ID,3670810
 INS_ACC2OFFS_X,-0.060999
 INS_ACC2OFFS_Y,0.051721
 INS_ACC2OFFS_Z,-0.112982
-INS_ACC2SCAL_X,0.995196
-INS_ACC2SCAL_Y,0.993343
-INS_ACC2SCAL_Z,0.987246
-INS_ACCEL_FILTER,10
+INS_ACC2SCAL_X,0.995196  # Copied from the connected flight controller
+INS_ACC2SCAL_Y,0.993343  # Copied from the connected flight controller
+INS_ACC2SCAL_Z,0.987246  # Copied from the connected flight controller
+INS_ACCEL_FILTER,10  # Filter cutoff frequency for accelerometers. The default is 20 and that lets too much noise in.
 INS_ACCOFFS_X,0.060698
 INS_ACCOFFS_Y,0.028126
 INS_ACCOFFS_Z,0.14836
@@ -452,81 +452,81 @@ INS_ACCSCAL_X,0.993521
 INS_ACCSCAL_Y,0.994283
 INS_ACCSCAL_Z,0.988497
 INS_ENABLE_MASK,127
-INS_FAST_SAMPLE,7
+INS_FAST_SAMPLE,7  # Mask of IMUs to enable fast sampling on, if available.
 INS_GYR_CAL,1
 INS_GYR_ID,2818578
-INS_GYR1_CALTEMP,19.5625
-INS_GYR2_CALTEMP,20.721001
+INS_GYR1_CALTEMP,21.9375
+INS_GYR2_CALTEMP,23.317001
 INS_GYR2_ID,3670810
-INS_GYR2OFFS_X,0.003001
-INS_GYR2OFFS_Y,0.002549
-INS_GYR2OFFS_Z,-0.002013
-INS_GYRO_FILTER,101
-INS_GYRO_RATE,2
-INS_GYROFFS_X,0.00068
-INS_GYROFFS_Y,-0.004054
-INS_GYROFFS_Z,0.002042
+INS_GYR2OFFS_X,0.003745
+INS_GYR2OFFS_Y,0.002882
+INS_GYR2OFFS_Z,-0.001831
+INS_GYRO_FILTER,101  # Derived from vehicle component editor propeller size
+INS_GYRO_RATE,2  # Gyro rate for IMUs with fast sampling enabled. The gyro rate is the sample rate at which the IMU filters operate and needs to be at least double the maximum filter frequency. The CubeOrange can do 4KHz here.
+INS_GYROFFS_X,0.000936
+INS_GYROFFS_Y,-0.003908
+INS_GYROFFS_Z,0.001771
 INS_HNTC2_ENABLE,0
-INS_HNTCH_ATT,40
-INS_HNTCH_BW,35
-INS_HNTCH_ENABLE,1
-INS_HNTCH_FM_RAT,0.7
-INS_HNTCH_FREQ,141.399994
-INS_HNTCH_HMNCS,3
-INS_HNTCH_MODE,3
-INS_HNTCH_OPTS,14
-INS_HNTCH_REF,1
+INS_HNTCH_ATT,40  # Determined using notch filter web tool.
+INS_HNTCH_BW,35  # Determined using notch filter web tool. Value is INS_HNTCH_FREQ/6. Higher bandwidth values can be a bit too wide for when we have selected “multi source” which means one notch per motor. The notch filter can quickly get a bit out of control and introduce lag if the bandwidth is too wide.
+INS_HNTCH_ENABLE,1  # Use the first notch filter to filter the noise created by the motors/propellers.
+INS_HNTCH_FM_RAT,0.7  # The minimum ratio below the configured frequency to take throttle based notch filters when flying at a throttle level below the reference throttle.  If you want throttle based notch filtering to be effective at a throttle up to 30% below the configured notch frequency then set this parameter to 0.7.
+INS_HNTCH_FREQ,141.399994  # Determined using notch filter web tool.
+INS_HNTCH_HMNCS,3  # Apply notch filter to 1st and 2nd harmonics
+INS_HNTCH_MODE,3  # ESC Telemetry
+INS_HNTCH_OPTS,14  # Bitmask set to: multi-source, update at loop rate, enable on all IMUs. Enable on all IMUs for redundancy. Use either Multi Source or Triple Notch, but not both at once! For drones with rapidly changing motor speeds, enabling "Update at loop rate" may improve performance, as it provides more accurate, timely filtering. However, if motor speed is generally steady, disabling this option can reduce CPU usage without significant impact on filtering effectiveness.
+INS_HNTCH_REF,1  # ESC Telemetry
 INS_LOG_BAT_CNT,1024
 INS_LOG_BAT_LGCT,32
 INS_LOG_BAT_LGIN,20
-INS_LOG_BAT_MASK,0
-INS_LOG_BAT_OPT,0
-INS_POS1_X,0
-INS_POS1_Y,0
+INS_LOG_BAT_MASK,0  # IMU batch logging no longer required, notch filter setup is complete, this reduces processor load and log file size
+INS_LOG_BAT_OPT,0  # PID notch filters require batch pre- and post- filters logging
+INS_POS1_X,0  # X position of the first IMU Accelerometer in body frame. Positive X is forward of the origin.
+INS_POS1_Y,0  # Y position of the first IMU accelerometer in body frame. Positive Y is to the right of the origin.
 INS_POS1_Z,0
-INS_POS2_X,0
-INS_POS2_Y,0
+INS_POS2_X,0  # X position of the second IMU accelerometer in body frame. Positive X is forward of the origin.
+INS_POS2_Y,0  # Y position of the second IMU accelerometer in body frame. Positive Y is to the right of the origin.
 INS_POS2_Z,0
-INS_RAW_LOG_OPT,0
+INS_RAW_LOG_OPT,0  # Gyro raw logging no longer required, notch filter setup is complete, this reduces processor load and log file size
 INS_STILL_THRESH,2.5
 INS_TCAL_OPTIONS,0
-INS_TCAL1_ENABLE,0
-INS_TCAL2_ENABLE,0
+INS_TCAL1_ENABLE,0  # Activates the temperature calibration for IMU 1 at the next start
+INS_TCAL2_ENABLE,0  # Activates the temperature calibration for IMU 2 at the next start
 INS_TRIM_OPTION,1
 INS_USE,1
 INS_USE2,1
-LAND_ALT_LOW,1000
+LAND_ALT_LOW,1000  # Altitude during Landing at which vehicle slows to LAND_SPEED. Value is centimeters.
 LAND_REPOSITION,1
-LAND_SPEED,40
-LAND_SPEED_HIGH,0
+LAND_SPEED,40  # The descent speed for the final stage of landing in cm/s
+LAND_SPEED_HIGH,0  # The descent speed for the first stage of landing in cm/s. If this is zero then WPNAV_SPEED_DN is used
 LGR_ENABLE,0
 LOG_BACKEND_TYPE,1
-LOG_BITMASK,145118
+LOG_BITMASK,2539519  # 0:Fast Attitude, 1:Medium Attitude, 2:GPS,3:System Performance,4:Control Tuning,5:Navigation Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,10:RC Output, 11:Optical Flow, 12:PID,13:Compass,14:Camera,15:Motors,16:Fast IMU,19:Fast Harmonic Notch Logging
 LOG_DARM_RATEMAX,0
-LOG_DISARMED,0
+LOG_DISARMED,0  # was only needed for wind speed estimation
 LOG_FILE_BUFSIZE,200
-LOG_FILE_DSRMROT,1
+LOG_FILE_DSRMROT,1  # One .bin log file per flight, not per battery/reboot
 LOG_FILE_MB_FREE,500
 LOG_FILE_RATEMAX,0
 LOG_FILE_TIMEOUT,5
 LOG_MAV_BUFSIZE,8
 LOG_MAV_RATEMAX,0
 LOG_MAX_FILES,500
-LOG_REPLAY,0
-LOIT_ACC_MAX,420
+LOG_REPLAY,0  # was only needed for wind speed estimation
+LOIT_ACC_MAX,420  # Loiter correction accel (file 16=420; AMC standard 500)
 LOIT_ANG_MAX,0
-LOIT_BRK_ACCEL,225
-LOIT_BRK_DELAY,0.1
+LOIT_BRK_ACCEL,225  # Loiter braking accel (file 16=225; moderate)
+LOIT_BRK_DELAY,0.1  # Default value is 1. Loiter brake start delay (in seconds), make the drone break faster when releasing the sticks.
 LOIT_BRK_JERK,500
 LOIT_SPEED,1250
-MAGH_ALT_DELTA,10
-MAGH_B,1.2
-MAGH_CMD,117
-MAGH_COUNT,6
-MAGH_LOG_ENABLE,1
-MAGH_MIN_SPEED,2.5
-MAGH_NUM_WP,18
-MAGH_USE_LOITER,1
+MAGH_ALT_DELTA,10  # Height difference between the highest and lowest point of the eight
+MAGH_B,1.2  # Geometric factor for the width of the eight
+MAGH_CMD,117  # Script_Time command value for identification of the script
+MAGH_COUNT,6  # Number of times the drone repeats the eight
+MAGH_LOG_ENABLE,1  # Activates the logging of the MAGH.Active message
+MAGH_MIN_SPEED,2.5  # Starting speed for the mission; slowly adjusts to the general speed in auto-missions
+MAGH_NUM_WP,18  # Number of waypoints from which the eight is built
+MAGH_USE_LOITER,1  # Sets a Loiter_unlimited command at the beginning of the mission to check the generated waypoints
 MIS_OPTIONS,0
 MIS_RESTART,0
 MIS_TOTAL,0
@@ -535,25 +535,25 @@ MNT2_TYPE,0
 MOT_BAT_CURR_MAX,0
 MOT_BAT_CURR_TC,5
 MOT_BAT_IDX,0
-MOT_BAT_VOLT_MAX,25.200001
-MOT_BAT_VOLT_MIN,19.799999
+MOT_BAT_VOLT_MAX,25.200001  # To correctly scale the PID gains. Voltage of a healthy, fully charged battery immediately after takeoff. Read from a flight log
+MOT_BAT_VOLT_MIN,19.799999  # Battery voltage minimum compensation voltage. Set to 3.3 * cell count.
 MOT_BOOST_SCALE,0
-MOT_HOVER_LEARN,1
+MOT_HOVER_LEARN,1  # The vehicle TOW weight does not change, so no need to save it
 MOT_OPTIONS,0
-MOT_PWM_MAX,2000
-MOT_PWM_MIN,1000
-MOT_PWM_TYPE,6
+MOT_PWM_MAX,2000  # Digital ESC protocol maximum is per definition 2000
+MOT_PWM_MIN,1000  # Digital ESC protocol minimum is per definition 1000
+MOT_PWM_TYPE,6  # DShot600 — corrected from template default of 7 (DShot1200)
 MOT_SAFE_DISARM,0
 MOT_SAFE_TIME,1
 MOT_SLEW_DN_TIME,0
 MOT_SLEW_UP_TIME,0
-MOT_SPIN_ARM,0.03
-MOT_SPIN_MAX,0.95
-MOT_SPIN_MIN,0.055
+MOT_SPIN_ARM,0.03  # Point at which the motors start to spin expressed as a number from 0 to 1 in the entire output range. Should be lower than MOT_SPIN_MIN.
+MOT_SPIN_MAX,0.95  # Point at which the thrust saturates expressed as a number from 0 to 1 in the entire output range
+MOT_SPIN_MIN,0.055  # Point at which the thrust starts expressed as a number from 0 to 1 in the entire output range. Should be higher than MOT_SPIN_ARM.
 MOT_SPOOL_TIM_DN,0
 MOT_SPOOL_TIME,0.5
-MOT_THST_EXPO,0.5
-MOT_THST_HOVER,0.14406
+MOT_THST_EXPO,0.5  # Motor thrust curve exponent (0.0 for linear to 1.0 for second order curve)
+MOT_THST_HOVER,0.14406  # Hover learn will improve this initial guess
 MOT_YAW_HEADROOM,200
 MSP_OPTIONS,0
 MSP_OSD_NCELLS,0
@@ -561,13 +561,13 @@ NMEA_MSG_EN,3
 NMEA_RATE_MS,100
 NTF_BUZZ_ON_LVL,1
 NTF_BUZZ_PIN,61
-NTF_BUZZ_TYPES,3
+NTF_BUZZ_TYPES,3  # Check the "DShot" checkbox to enable usingthe motors as buzzers
 NTF_BUZZ_VOLUME,100
 NTF_DISPLAY_TYPE,0
 NTF_LED_BRIGHT,3
 NTF_LED_LEN,1
 NTF_LED_OVERRIDE,0
-NTF_LED_TYPES,125127
+NTF_LED_TYPES,125127  # Check the "DShot" checkbox to enable controlling the ESCs LEDs
 OA_TYPE,0
 OSD_ARM_SCR,0
 OSD_BTN_DELAY,300
@@ -582,7 +582,7 @@ OSD_OPTIONS,1
 OSD_SB_H_OFS,0
 OSD_SB_V_EXT,0
 OSD_SW_METHOD,0
-OSD_TYPE,1
+OSD_TYPE,1  # Analog OSD enabled via VTX SmartAudio
 OSD_TYPE2,0
 OSD_UNITS,0
 OSD_V_OFFSET,16
@@ -809,7 +809,7 @@ PILOT_SPEED_DN,0
 PILOT_SPEED_UP,250
 PILOT_THR_BHV,0
 PILOT_THR_FILT,0
-PILOT_TKOFF_ALT,0
+PILOT_TKOFF_ALT,0  # Altitude that altitude control modes will climb to when a takeoff is triggered with the throttle stick. Leave at 0 for default. Set to 100 to climb to 1m on take-off. Value in centimeters.
 PILOT_Y_EXPO,0
 PILOT_Y_RATE,202.5
 PILOT_Y_RATE_TC,0
@@ -817,7 +817,7 @@ PLDP_DELAY,0
 PLDP_RNG_MAX,0
 PLDP_SPEED_DN,0
 PLDP_THRESH,0.9
-PLND_ENABLED,0
+PLND_ENABLED,0  # Precision landing disabled; enable only when beacon and downward camera installed
 PRX_ALT_MIN,1
 PRX_FILT,0.25
 PRX_IGN_GND,0
@@ -833,11 +833,11 @@ PSC_ACCZ_FF,0
 PSC_ACCZ_FLTD,0
 PSC_ACCZ_FLTE,20
 PSC_ACCZ_FLTT,0
-PSC_ACCZ_I,0.30546
+PSC_ACCZ_I,0.30546  # Use 2 * MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
 PSC_ACCZ_IMAX,800
 PSC_ACCZ_NEF,0
 PSC_ACCZ_NTF,0
-PSC_ACCZ_P,0.15273
+PSC_ACCZ_P,0.15273  # Use MOT_THST_HOVER assuming MOT_THST_HOVER has been correctly learned
 PSC_ACCZ_PDMX,0
 PSC_ACCZ_SMAX,0
 PSC_ANGLE_MAX,0
@@ -863,12 +863,12 @@ QUIK_AUTO_FILTER,1
 QUIK_AUTO_SAVE,0
 QUIK_AXES,7
 QUIK_DOUBLE_TIME,10
-QUIK_ENABLE,1
+QUIK_ENABLE,0  # Disable the VTOL-Quicktune lua script, no longer needed post-AutoTune
 QUIK_GAIN_MARGIN,70
 QUIK_MAX_REDUCE,25
 QUIK_OPTIONS,0
 QUIK_OSC_SMAX,3
-QUIK_RC_FUNC,300
+QUIK_RC_FUNC,300  # the script uses this value to listen to RC switch
 QUIK_RP_PI_RATIO,1
 QUIK_Y_PI_RATIO,10
 QUIK_YAW_D_MAX,0.01
@@ -876,10 +876,10 @@ QUIK_YAW_P_MAX,0.5
 RALLY_INCL_HOME,1
 RALLY_LIMIT_KM,0.3
 RALLY_TOTAL,0
-RC_FS_TIMEOUT,1
-RC_OPTIONS,288
+RC_FS_TIMEOUT,1  # RC failsafe will trigger this many seconds after loss of RC.
+RC_OPTIONS,288  # The default is 32. Change to 288 to enable pass-through for CRSF telemetry.
 RC_OVERRIDE_TIME,3
-RC_PROTOCOLS,1
+RC_PROTOCOLS,1  # Selected in the component editor
 RC_SPEED,490
 RC1_DZ,20
 RC1_MAX,2011
@@ -890,13 +890,13 @@ RC1_TRIM,1500
 RC10_DZ,0
 RC10_MAX,2000
 RC10_MIN,999
-RC10_OPTION,31
+RC10_OPTION,31  # Motor Emergency Stop.
 RC10_REVERSED,0
 RC10_TRIM,999
 RC11_DZ,0
 RC11_MAX,2000
 RC11_MIN,999
-RC11_OPTION,30
+RC11_OPTION,30  # Lost copter sound
 RC11_REVERSED,0
 RC11_TRIM,999
 RC12_DZ,0
@@ -950,31 +950,31 @@ RC4_TRIM,1499
 RC5_DZ,0
 RC5_MAX,2000
 RC5_MIN,999
-RC5_OPTION,0
+RC5_OPTION,0  # ExpressLRS requires RC5 to be used for arming (Arm/Disarm function)
 RC5_REVERSED,0
 RC5_TRIM,2000
 RC6_DZ,0
 RC6_MAX,2000
 RC6_MIN,999
-RC6_OPTION,0
+RC6_OPTION,0  # Do nothing. Function assigned to rc channel 6. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
 RC6_REVERSED,0
 RC6_TRIM,999
 RC7_DZ,0
 RC7_MAX,2000
 RC7_MIN,999
-RC7_OPTION,11
+RC7_OPTION,11  # Enable/Disable fence
 RC7_REVERSED,0
 RC7_TRIM,2000
 RC8_DZ,0
 RC8_MAX,2000
 RC8_MIN,999
-RC8_OPTION,300
+RC8_OPTION,300  # RC switch will be used to start/stop the tune set RCx_OPTION = 300 where "x" is the RC input channel number.
 RC8_REVERSED,0
 RC8_TRIM,999
 RC9_DZ,0
 RC9_MAX,2000
 RC9_MIN,999
-RC9_OPTION,0
+RC9_OPTION,0  # Do nothing. Function assigned to rc channel 9. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
 RC9_REVERSED,0
 RC9_TRIM,999
 RCMAP_PITCH,3
@@ -990,9 +990,9 @@ RELAY6_FUNCTION,0
 RNGFND_FILT,0.5
 RNGFND1_ADDR,0
 RNGFND1_FUNCTION,0
-RNGFND1_GNDCLEAR,5
-RNGFND1_MAX_CM,600
-RNGFND1_MIN_CM,2
+RNGFND1_GNDCLEAR,5  # Optional - This parameter sets the expected range measurement(in cm) that the range finder should return when the vehicle is on the ground.
+RNGFND1_MAX_CM,600  # Maximum distance in centimeters that rangefinder can reliably read.
+RNGFND1_MIN_CM,2  # Minimum distance in centimeters that rangefinder can reliably read.
 RNGFND1_OFFSET,0
 RNGFND1_ORIENT,25
 RNGFND1_PIN,-1
@@ -1003,7 +1003,7 @@ RNGFND1_PWRRNG,0
 RNGFND1_RMETRIC,1
 RNGFND1_SCALING,3
 RNGFND1_STOP_PIN,-1
-RNGFND1_TYPE,10
+RNGFND1_TYPE,10  # Type of connected rangefinder. Reboot flight controller after setting this for rest of the params to show.
 RNGFND2_TYPE,0
 RNGFND3_TYPE,0
 RNGFND4_TYPE,0
@@ -1021,21 +1021,21 @@ RSSI_CHAN_LOW,1000
 RSSI_CHANNEL,0
 RSSI_PIN_HIGH,5
 RSSI_PIN_LOW,0
-RSSI_TYPE,3
-RTL_ALT,1500
+RSSI_TYPE,3  # Indicate RSSI is provided by the receiver protocol.
+RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.
 RTL_ALT_FINAL,0
 RTL_ALT_TYPE,0
 RTL_CLIMB_MIN,0
 RTL_CONE_SLOPE,3
-RTL_LOIT_TIME,5000
+RTL_LOIT_TIME,5000  # Time (in milliseconds) to loiter above home before beginning final descent. Value is in milliseconds.
 RTL_OPTIONS,0
 RTL_SPEED,0
 SCHED_DEBUG,0
-SCHED_LOOP_RATE,400
+SCHED_LOOP_RATE,400  # Rate of the main loop in hertz. Keep default.
 SCHED_OPTIONS,0
 SCR_DEBUG_OPTS,0
 SCR_DIR_DISABLE,0
-SCR_ENABLE,1
+SCR_ENABLE,1  # Use lua scripting for MagFit flight path automation
 SCR_HEAP_SIZE,204800
 SCR_LD_CHECKSUM,-1
 SCR_RUN_CHECKSUM,-1
@@ -1052,34 +1052,34 @@ SERIAL_PASS2,-1
 SERIAL_PASSTIMO,15
 SERIAL0_BAUD,115
 SERIAL0_PROTOCOL,2
-SERIAL1_BAUD,57
+SERIAL1_BAUD,57  # We dont have a telemetry radio so leaving at default.
 SERIAL1_OPTIONS,0
-SERIAL1_PROTOCOL,2
-SERIAL2_BAUD,4
-SERIAL2_OPTIONS,4
-SERIAL2_PROTOCOL,37
+SERIAL1_PROTOCOL,2  # Use MAVLink 2 for telemetry
+SERIAL2_BAUD,4  # The required baud rate for SmartAudio.
+SERIAL2_OPTIONS,4  # For half-duplex communication, which SmartAudio requires.
+SERIAL2_PROTOCOL,37  # Enable the SmartAudio protocol.
 SERIAL3_BAUD,230
 SERIAL3_OPTIONS,0
-SERIAL3_PROTOCOL,5
-SERIAL4_BAUD,115
-SERIAL4_OPTIONS,1024
-SERIAL4_PROTOCOL,1
+SERIAL3_PROTOCOL,5  # Treat the data coming from UART3 as a GPS protocol.
+SERIAL4_BAUD,115  # The baud rate used for Serial4. 115200 baud.
+SERIAL4_OPTIONS,1024  # Dont forward mavlink to/from for 4.6.3
+SERIAL4_PROTOCOL,1  # What protocol Serial4 port should be used for. Lidar and Flow.
 SERIAL5_BAUD,57
 SERIAL5_OPTIONS,0
 SERIAL5_PROTOCOL,-1
-SERIAL6_BAUD,57
+SERIAL6_BAUD,57  # 57 (57600) is fine. ArduPilot switches it internally to the correct CRSF baud of 400000.
 SERIAL6_OPTIONS,0
-SERIAL6_PROTOCOL,23
+SERIAL6_PROTOCOL,23  # CRSF RCIN, which should be the default.
 SERIAL7_BAUD,57
 SERIAL7_OPTIONS,0
-SERIAL7_PROTOCOL,-1
+SERIAL7_PROTOCOL,-1  # Disable orphaned UART; ESC uses bidirectional DShot, not UART telemetry
 SERIAL8_BAUD,115
 SERIAL8_OPTIONS,0
 SERIAL8_PROTOCOL,2
 SERVO_32_ENABLE,0
 SERVO_BLH_3DMASK,0
 SERVO_BLH_AUTO,0
-SERVO_BLH_BDMASK,15
+SERVO_BLH_BDMASK,15  # Mask of channels which support bi-directional dshot telemetry.
 SERVO_BLH_DEBUG,0
 SERVO_BLH_MASK,0
 SERVO_BLH_OTYPE,0
@@ -1089,7 +1089,7 @@ SERVO_BLH_RVMASK,0
 SERVO_BLH_TEST,0
 SERVO_BLH_TMOUT,0
 SERVO_BLH_TRATE,10
-SERVO_DSHOT_ESC,4
+SERVO_DSHOT_ESC,4  # BLHeli_S/BlueJay EDT
 SERVO_DSHOT_RATE,0
 SERVO_FTW_MASK,0
 SERVO_FTW_POLES,14
@@ -1102,7 +1102,7 @@ SERVO_ROB_POSMIN,0
 SERVO_SBUS_RATE,50
 SERVO_VOLZ_MASK,0
 SERVO_VOLZ_RANGE,200
-SERVO1_FUNCTION,34
+SERVO1_FUNCTION,34  # Left Motor
 SERVO1_MAX,2000
 SERVO1_MIN,1000
 SERVO1_REVERSED,0
@@ -1142,17 +1142,17 @@ SERVO16_MAX,1900
 SERVO16_MIN,1100
 SERVO16_REVERSED,0
 SERVO16_TRIM,1500
-SERVO2_FUNCTION,35
+SERVO2_FUNCTION,35  # Motor 3
 SERVO2_MAX,2000
 SERVO2_MIN,1000
 SERVO2_REVERSED,0
 SERVO2_TRIM,1000
-SERVO3_FUNCTION,36
+SERVO3_FUNCTION,36  # Right Motor
 SERVO3_MAX,2000
 SERVO3_MIN,1000
 SERVO3_REVERSED,0
 SERVO3_TRIM,1000
-SERVO4_FUNCTION,33
+SERVO4_FUNCTION,33  # Motor 1
 SERVO4_MAX,2000
 SERVO4_MIN,1000
 SERVO4_REVERSED,0
@@ -1182,29 +1182,29 @@ SERVO9_MAX,1900
 SERVO9_MIN,1100
 SERVO9_REVERSED,0
 SERVO9_TRIM,1500
-SID_AXIS,0
+SID_AXIS,0  # No more system identification chip injections
 SIMPLE,0
 SPRAY_ENABLE,0
 SR0_ADSB,0
-SR0_EXT_STAT,0
-SR0_EXTRA1,0
-SR0_EXTRA2,0
-SR0_EXTRA3,0
+SR0_EXT_STAT,0  # Extended status stream rate in hertz.
+SR0_EXTRA1,0  # MAVLink Stream rate of ATTITUDE, SIMSTATE (SIM only), AHRS2 and PID_TUNING
+SR0_EXTRA2,0  # MAVLink Stream rate of VFR_HUD
+SR0_EXTRA3,0  # MAVLink Stream rate of AHRS, SYSTEM_TIME, WIND, RANGEFINDER, DISTANCE_SENSOR, TERRAIN_REQUEST, BATTERY_STATUS, GIMBAL_DEVICE_ATTITUDE_STATUS, OPTICAL_FLOW, MAG_CAL_REPORT, MAG_CAL_PROGRESS, EKF_STATUS_REPORT, VIBRATION, RPM, ESC TELEMETRY,GENERATOR_STATUS, and WINCH_STATUS
 SR0_PARAMS,0
-SR0_POSITION,0
+SR0_POSITION,0  # MAVLink Stream rate of GLOBAL_POSITION_INT and LOCAL_POSITION_NED
 SR0_RAW_CTRL,0
-SR0_RAW_SENS,0
-SR0_RC_CHAN,0
+SR0_RAW_SENS,0  # MAVLink Stream rate of RAW_IMU, SCALED_IMU2, SCALED_IMU3, SCALED_PRESSURE, SCALED_PRESSURE2, and SCALED_PRESSURE3
+SR0_RC_CHAN,0  # MAVLink Stream rate of SERVO_OUTPUT_RAW and RC_CHANNELS
 SR1_ADSB,0
 SR1_EXT_STAT,0
-SR1_EXTRA1,0
-SR1_EXTRA2,0
-SR1_EXTRA3,0
+SR1_EXTRA1,0  # MAVLink Stream rate of ATTITUDE, SIMSTATE (SIM only), AHRS2 and PID_TUNING
+SR1_EXTRA2,0  # MAVLink Stream rate of VFR_HUD
+SR1_EXTRA3,0  # MAVLink Stream rate of AHRS, SYSTEM_TIME, WIND, RANGEFINDER, DISTANCE_SENSOR, TERRAIN_REQUEST, BATTERY_STATUS, GIMBAL_DEVICE_ATTITUDE_STATUS, OPTICAL_FLOW, MAG_CAL_REPORT, MAG_CAL_PROGRESS, EKF_STATUS_REPORT, VIBRATION, RPM, ESC TELEMETRY,GENERATOR_STATUS, and WINCH_STATUS
 SR1_PARAMS,0
-SR1_POSITION,0
+SR1_POSITION,0  # MAVLink Stream rate of GLOBAL_POSITION_INT and LOCAL_POSITION_NED
 SR1_RAW_CTRL,0
-SR1_RAW_SENS,0
-SR1_RC_CHAN,0
+SR1_RAW_SENS,0  # MAVLink Stream rate of RAW_IMU, SCALED_IMU2, SCALED_IMU3, SCALED_PRESSURE, SCALED_PRESSURE2, and SCALED_PRESSURE3
+SR1_RC_CHAN,0  # MAVLink Stream rate of SERVO_OUTPUT_RAW and RC_CHANNELS
 SR2_ADSB,0
 SR2_EXT_STAT,0
 SR2_EXTRA1,0
@@ -1258,10 +1258,10 @@ SR6_RC_CHAN,0
 SRTL_ACCURACY,2
 SRTL_OPTIONS,0
 SRTL_POINTS,300
-STAT_BOOTCNT,83
-STAT_FLTTIME,4001
+STAT_BOOTCNT,86
+STAT_FLTTIME,4279
 STAT_RESET,1
-STAT_RUNTIME,24331
+STAT_RUNTIME,25805
 SUPER_SIMPLE,0
 SURFTRAK_MODE,1
 SURFTRAK_TC,1
@@ -1287,32 +1287,32 @@ THROW_MOT_START,0
 THROW_NEXTMODE,18
 THROW_TYPE,0
 TKOFF_RPM_MAX,0
-TKOFF_RPM_MIN,200
+TKOFF_RPM_MIN,200  # Setup dead motor takeoff prevention. Get the RPMs when the motor is armed. Then set TKOFF_RPM_MIN to an RPM slightly less than this value. https://ardupilot.org/copter/docs/tkoff-rpm-min.html
 TKOFF_SLEW_TIME,2
 TKOFF_THR_MAX,0.9
 TUNE,0
 TUNE_MAX,0
 TUNE_MIN,0
 VISO_TYPE,0
-VTX_BAND,4
-VTX_CHANNEL,7
-VTX_ENABLE,1
+VTX_BAND,4  # Race Band
+VTX_CHANNEL,7  # Channel 8.
+VTX_ENABLE,1  # Enable VTX support. Reboot flight controller after setting.
 VTX_FREQ,5917
 VTX_MAX_POWER,800
-VTX_OPTIONS,10
-VTX_POWER,100
+VTX_OPTIONS,10  # Pitmode until armed and Unlocked options.
+VTX_POWER,100  # Change from 25 to 100mw.
 WINCH_TYPE,0
 WP_NAVALT_MIN,0
 WP_YAW_BEHAVIOR,2
-WPNAV_ACCEL,125
+WPNAV_ACCEL,125  # Mission horizontal accel (file 16=125; 2 m/s/s)
 WPNAV_ACCEL_C,0
-WPNAV_ACCEL_Z,75
+WPNAV_ACCEL_Z,75  # Defines the vertical acceleration in cm/s/s used during missions.
 WPNAV_JERK,1
 WPNAV_RADIUS,200
 WPNAV_RFND_USE,1
-WPNAV_SPEED,450
-WPNAV_SPEED_DN,100
-WPNAV_SPEED_UP,150
+WPNAV_SPEED,450  # Mission speed (file 16=450; 5 m/s)
+WPNAV_SPEED_DN,100  # Mission descent speed (file 16=100; 1.5 m/s)
+WPNAV_SPEED_UP,150  # Mission climb speed (file 16=150; 2 m/s)
 WPNAV_TER_MARGIN,10
 WVANE_ENABLE,0
 ZIGZ_AUTO_ENABLE,0

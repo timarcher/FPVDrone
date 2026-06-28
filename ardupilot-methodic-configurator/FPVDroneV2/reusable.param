@@ -34,55 +34,55 @@ ARMING_NEED_LOC,0
 ARMING_OPTIONS,0
 ARMING_RUDDER,2  # Allow arm or disarm by rudder input.
 ARSPD_ENABLE,0
-ATC_ACCEL_P_MAX,328671.46875  # Derived from vehicle component editor propeller size
-ATC_ACCEL_R_MAX,513770.78125  # Derived from vehicle component editor propeller size
-ATC_ACCEL_Y_MAX,387010.96875  # Derived from vehicle component editor propeller size
+ATC_ACCEL_P_MAX,338304.5  # Derived from vehicle component editor propeller size
+ATC_ACCEL_R_MAX,495016.8125  # Derived from vehicle component editor propeller size
+ATC_ACCEL_Y_MAX,77811.109375  # Derived from vehicle component editor propeller size
 ATC_ANG_LIM_TC,1
-ATC_ANG_PIT_P,29.631266  # higher value mean a tighter tune
-ATC_ANG_RLL_P,36  # higher value mean a tighter tune
-ATC_ANG_YAW_P,28.02326  # higher value mean a tighter tune
+ATC_ANG_PIT_P,29.173761  # higher value mean a tighter tune
+ATC_ANG_RLL_P,32.068527  # higher value mean a tighter tune
+ATC_ANG_YAW_P,15.576117  # higher value mean a tighter tune
 ATC_ANGLE_BOOST,1
 ATC_INPUT_TC,0.2  # Attitude control input time constant. Low numbers lead to sharper response, higher numbers to softer response. 0.5:Very Soft,0.2:Soft,0.15:Medium,0.1:Crisp,0.05:Very Crisp
 ATC_LAND_P_MULT,1
 ATC_LAND_R_MULT,1
 ATC_LAND_Y_MULT,1
-ATC_RAT_PIT_D,0.003493  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_D,0.003625  # Setting value after running QuickTune LUA script
 ATC_RAT_PIT_D_FF,0
 ATC_RAT_PIT_FF,0
 ATC_RAT_PIT_FLTD,50.5  # INS_GYRO_FILTER / 2
 ATC_RAT_PIT_FLTE,0  # Initial value, will be improved at a later step
 ATC_RAT_PIT_FLTT,50.5  # INS_GYRO_FILTER / 2
-ATC_RAT_PIT_I,0.212828  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_I,0.223185  # Setting value after running QuickTune LUA script
 ATC_RAT_PIT_IMAX,0.5
 ATC_RAT_PIT_NEF,0
 ATC_RAT_PIT_NTF,0
-ATC_RAT_PIT_P,0.212828  # Setting value after running QuickTune LUA script
+ATC_RAT_PIT_P,0.223185  # Setting value after running QuickTune LUA script
 ATC_RAT_PIT_PDMX,0
 ATC_RAT_PIT_SMAX,0
-ATC_RAT_RLL_D,0.001478  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_D,0.001712  # Setting value after running QuickTune LUA script
 ATC_RAT_RLL_D_FF,0
 ATC_RAT_RLL_FF,0
 ATC_RAT_RLL_FLTD,50.5  # INS_GYRO_FILTER / 2
 ATC_RAT_RLL_FLTE,0  # Initial value, will be improved at a later step
 ATC_RAT_RLL_FLTT,50.5  # INS_GYRO_FILTER / 2
-ATC_RAT_RLL_I,0.081693  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_I,0.101431  # Setting value after running QuickTune LUA script
 ATC_RAT_RLL_IMAX,0.5
 ATC_RAT_RLL_NEF,0
 ATC_RAT_RLL_NTF,0
-ATC_RAT_RLL_P,0.081693  # Setting value after running QuickTune LUA script
+ATC_RAT_RLL_P,0.101431  # Setting value after running QuickTune LUA script
 ATC_RAT_RLL_PDMX,0
 ATC_RAT_RLL_SMAX,0
 ATC_RAT_YAW_D,0.00883  # if == to AUTOTUNE_MIN_D, autotune failed
 ATC_RAT_YAW_D_FF,0
 ATC_RAT_YAW_FF,0
 ATC_RAT_YAW_FLTD,25.25  # Use INS_GYRO_FILTER / 4 as a first guess
-ATC_RAT_YAW_FLTE,1.629012  # Initial value, will be improved at a later step
+ATC_RAT_YAW_FLTE,3.317102  # Initial value, will be improved at a later step
 ATC_RAT_YAW_FLTT,50.5  # INS_GYRO_FILTER / 2
-ATC_RAT_YAW_I,0.03589  # Setting value after running QuickTune LUA script
+ATC_RAT_YAW_I,0.018796  # Setting value after running QuickTune LUA script
 ATC_RAT_YAW_IMAX,0.5
 ATC_RAT_YAW_NEF,0
 ATC_RAT_YAW_NTF,0
-ATC_RAT_YAW_P,0.358901  # Setting value after running QuickTune LUA script
+ATC_RAT_YAW_P,0.187958  # Setting value after running QuickTune LUA script
 ATC_RAT_YAW_PDMX,0
 ATC_RAT_YAW_SMAX,0
 ATC_RATE_FF_ENAB,1  # Restore value now that system identification is done
@@ -92,7 +92,7 @@ ATC_RATE_Y_MAX,0
 ATC_SLEW_YAW,6000
 ATC_THR_G_BOOST,0
 ATC_THR_MIX_MAN,0.5  # Because ALTHOLD flight mode was used for more than 30 seconds to correctly learn the MOT_THST_HOVER value
-ATC_THR_MIX_MAX,0.5  # Maximize attitude control authority at high throttle
+ATC_THR_MIX_MAX,0.9  # Maximize attitude control authority at high throttle
 ATC_THR_MIX_MIN,0.1
 AUTO_OPTIONS,0
 AUTOTUNE_AGGR,0.1  # Autotune Aggressiveness. .1=agressive, .075=medium, .05=weak. Default is .1
@@ -178,7 +178,7 @@ CIRCLE_RATE,20
 COMPASS_AUTO_ROT,2
 COMPASS_AUTODEC,1
 COMPASS_CAL_FIT,16
-COMPASS_DEC,-0.062097
+COMPASS_DEC,0
 COMPASS_DEV_ID3,0
 COMPASS_DEV_ID4,0
 COMPASS_DEV_ID5,0
@@ -373,7 +373,7 @@ FLTMODE_GCSBLOCK,0
 FLTMODE1,5  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is <= 1230. Set to Loiter.
 FLTMODE2,2  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1230, <= 1360. Set to AltHold.
 FLTMODE3,0  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1360, <= 1490. Set to Auto (For running missions).
-FLTMODE4,15  # Restore Auto mode — file 14 set this to AutoTune (15)
+FLTMODE4,3  # Restore Auto mode — file 14 set this to AutoTune (15)
 FLTMODE5,6  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >1620, <= 1749. Set to RTL.
 FLTMODE6,9  # Flight mode when pwm of Flightmode channel(FLTMODE_CH) is >=1750. Set to Land.
 FOLL_ENABLE,0
@@ -469,7 +469,7 @@ LAND_SPEED,40  # The descent speed for the final stage of landing in cm/s
 LAND_SPEED_HIGH,0  # The descent speed for the first stage of landing in cm/s. If this is zero then WPNAV_SPEED_DN is used
 LGR_ENABLE,0
 LOG_BACKEND_TYPE,1
-LOG_BITMASK,145118  # 2:GPS,3:System Performance,4:Control Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,12:PID,13:Compass,17:Motors
+LOG_BITMASK,2539519  # 0:Fast Attitude, 1:Medium Attitude, 2:GPS,3:System Performance,4:Control Tuning,5:Navigation Tuning,6:RC input,7:IMU,8:Mission Commands,9:Battery Monitor,10:RC Output, 11:Optical Flow, 12:PID,13:Compass,14:Camera,15:Motors,16:Fast IMU,19:Fast Harmonic Notch Logging
 LOG_DARM_RATEMAX,0
 LOG_DISARMED,0  # was only needed for wind speed estimation
 LOG_FILE_BUFSIZE,200
@@ -831,7 +831,7 @@ QUIK_AUTO_FILTER,1
 QUIK_AUTO_SAVE,0
 QUIK_AXES,7
 QUIK_DOUBLE_TIME,10
-QUIK_ENABLE,1  # Disable the VTOL-Quicktune lua script, no longer needed post-AutoTune
+QUIK_ENABLE,0  # Disable the VTOL-Quicktune lua script, no longer needed post-AutoTune
 QUIK_GAIN_MARGIN,70
 QUIK_MAX_REDUCE,25
 QUIK_OPTIONS,0
@@ -942,7 +942,7 @@ RC8_TRIM,999
 RC9_DZ,0
 RC9_MAX,2000
 RC9_MIN,999
-RC9_OPTION,171  # Do nothing. Function assigned to rc channel 9. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
+RC9_OPTION,0  # Do nothing. Function assigned to rc channel 9. For example, we could pick things like "Motor Emergency Stop", "Lost rover Sound", etc
 RC9_REVERSED,0
 RC9_TRIM,999
 RCMAP_PITCH,3
