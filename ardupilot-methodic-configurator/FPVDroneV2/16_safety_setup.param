@@ -14,8 +14,8 @@ FS_EKF_ACTION,1
 LAND_ALT_LOW,1000  # Altitude during Landing at which vehicle slows to LAND_SPEED. Value is centimeters.
 LAND_SPEED,40  # The descent speed for the final stage of landing in cm/s
 LAND_SPEED_HIGH,0  # The descent speed for the first stage of landing in cm/s. If this is zero then WPNAV_SPEED_DN is used
-LOIT_ACC_MAX,420  # Default is 500. Loiter maximum correction acceleration in cm/s/s. Higher values cause the copter to correct position errors more aggressively.
-LOIT_BRK_ACCEL,225  # Default is 250. Loiter braking acceleration in cm/s/s. Higher values stop the copter more quickly when the stick is centered.
+LOIT_ACC_MAX,500  # Default is 500. Loiter maximum correction acceleration in cm/s/s. Higher values cause the copter to correct position errors more aggressively.
+LOIT_BRK_ACCEL,250  # Default is 250. Loiter braking acceleration in cm/s/s. Higher values stop the copter more quickly when the stick is centered.
 LOIT_BRK_DELAY,0.1  # Default value is 1. Loiter brake start delay (in seconds), make the drone break faster when releasing the sticks.
 PSC_ACCZ_SMAX,0
 RTL_ALT,1500  # The minimum alt above home the vehicle will climb to before returning. If the vehicle is flying higher than this value it will return at its current altitude. Value is in Centimeters.

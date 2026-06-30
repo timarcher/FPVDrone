@@ -1,6 +1,7 @@
+ANGLE_MAX,4000  # Maximum lean angle in all flight modes. Value in centidegrees.
 LOG_BITMASK,145150  # Add Navigation logging
-LOIT_ACC_MAX,420  # Loiter correction accel (file 16=420; AMC standard 500)
-LOIT_BRK_ACCEL,225  # Loiter braking accel (file 16=225; moderate)
+LOIT_ACC_MAX,500  # Loiter correction accel (file 16=420; AMC standard 500)
+LOIT_BRK_ACCEL,250  # Loiter braking accel (file 16=225; moderate)
 WPNAV_ACCEL,125  # Mission horizontal accel (file 16=125; 2 m/s/s)
 WPNAV_SPEED,450  # Mission speed (file 16=450; 5 m/s)
 WPNAV_SPEED_DN,100  # Mission descent speed (file 16=100; 1.5 m/s)
