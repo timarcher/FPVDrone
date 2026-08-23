@@ -3,7 +3,7 @@
     "Components": {
         "Flight Controller": {
             "Product": {
-                "Manufacturer": "ArduPilot,AET,Airvolute,Aocoda-RC-H743Dual,CSKY,GreenSight,Japan Aviation Electronics Industry Ltd.,Taiphoon,mRo,ORBITH743,Horizon31,Dheeran labs,PrincipIoT,Qiotek,Sierra Aerospace,SkySakura",
+                "Manufacturer": "ArduPilot,AET,Airvolute,Aocoda-RC-H743Dual,CSKY,AMOV,GreenSight,Japan Aviation Electronics Industry Ltd.,Taiphoon,mRo,ORBITH743,ORBITH743v2,Horizon31,Dheeran labs,PrincipIoT,Qiotek,Sierra Aerospace,SkySakura",
                 "Model": "MicoAir743v2",
                 "Version": "V2",
                 "URL": "https://store.micoair.com/product/micoair743-v2/"
@@ -55,10 +55,10 @@
             "Specifications": {
                 "Chemistry": "Lipo",
                 "Volt per cell max": 4.2,
-                "Volt per cell arm": 3.6667,
-                "Volt per cell low": 3.6,
-                "Volt per cell crit": 3.4,
-                "Volt per cell min": 3.2,
+                "Volt per cell arm": 3.9,
+                "Volt per cell low": 3.7,
+                "Volt per cell crit": 3.5,
+                "Volt per cell min": 3.3,
                 "Number of cells": 6,
                 "Capacity mAh": 1600
             },
@@ -182,5 +182,5 @@
             "Notes": "We use CRSF telemetry through the receiver."
         }
     },
-    "Program version": "4.3.0"
+    "Program version": "4.4.0"
 }
