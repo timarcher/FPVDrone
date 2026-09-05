@@ -62,6 +62,10 @@ To get the Yaapu telemetry widget to show remaining battery based on pack voltag
 - Configure batt alert level 1 to be the Ardupilot BATT_LOW_VOLT value divided by the number of cells.
 - Configure batt alert level 2 to be the Ardupilot BATT_CRT_VOLT value divided by the number of cells.
 - Press Exit/Rtn to save.
+- Put the battery curve file on the radio SD card. 
+  - Copy the file modelname_batt.lua into /WIDGETS/yaapu/cfg/
+  - You must rename it before using it. Take the active model name on your TX16S, convert it to lowercase, remove spaces and punctuation, then append _batt.lua. For example, a radio model named ProTek 35 requires protek35_batt.lu
+  - Restart the radio after copying the file so Yaapu loads it, then check with the aircraft disarmed and telemetry connected. The widget loads the curve from the model-specific file.
 
 ## Yaapu Map Display
 - Switch off the Yaapu telemetry screen to the normal screen by cycling through the page buttons.
