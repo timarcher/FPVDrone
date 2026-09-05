@@ -55,6 +55,25 @@ This page contains details about setting up the electronics used for the Drone.
 - Be sure to set the 6 position switch to channel 6 instead of 5 for the flight mode selection. ExpressLRS hard-codes channel 5 (AUX1) as a 2-position, 1-bit arming channel for safety and system performance. This is an intentional design feature of ELRS and cannot be changed, regardless of your other radio settings. You will also need to set FLTMODE_CH to 6 in ArduPilot configuration.
 
 
+## Battery Percentage by Voltage
+The green battery bar in the Yaapu widget is **not** voltage based. It shows ArduPilot's remaining percentage, which is calculated purely from consumed mAh against `BATT_CAPACITY`. Neither Yaapu nor ArduPilot has a setting to switch that bar to a voltage curve ([Yaapu config menu](https://github.com/yaapu/FrskyTelemetryScript/wiki/Configuration-menu), [ArduPilot issue #12897](https://github.com/ArduPilot/ardupilot/issues/12897)). Use the options below to get a voltage-driven reading.
+
+- **Option 1 - Align the mAh bar with your voltage cutoff** (easiest, recommended)
+  - Set `BATT_CAPACITY` to the *usable* capacity, not the label capacity. For the 1800 mAh 6S pack with a 20% reserve, use `1440`.
+  - Set `BATT_LOW_VOLT` = `21.6` (3.6 V x 6S) and `BATT_CRT_VOLT` = `20.4` (3.4 V x 6S).
+  - Set `BATT_LOW_MAH` = `0` so the failsafe triggers on voltage only.
+  - Set `BATT_FS_VOLTSRC` = `1` (sag-compensated voltage) so a hard throttle punch does not trip the failsafe early.
+  - Result: the bar reaches 0% at roughly the same time the pack reaches 3.6 V/cell. Still mAh based, so it drifts as the pack ages.
+- **Option 2 - Make Yaapu's alerts voltage based** (do this regardless of the above)
+  - Long press **[SYS]** -> Tools -> Yaapu Config.
+  - Set **battery alert level 1** to `3.60` (default is 3.75) and **battery alert level 2** to `3.50`.
+  - These are per-cell values and are independent of cell count. Below level 1 you get a vocal alert and a blinking `V`; below level 2 a second alert and blinking voltage digits.
+- **Option 3 - Add a true voltage gauge beside Yaapu**
+  - Give Yaapu a half-screen widget slot and put a battery widget in the other half.
+  - EdgeTX built-in **BattAnalog** widget: graphical charge bar from total voltage with automatic cell count detection. Its curve is fixed at 3.0-4.2 V/cell (the `Lithium_Ion` option only moves the minimum to 2.8), so it will read around 35-40% at your 3.6 V point rather than 0%.
+  - For an exact 4.2 V = 100% / 3.6 V = 0% scale, use the [mahRe2 Lua widget](https://github.com/fdm225/mahRe2) instead. It has a configurable full-cell voltage and reserve percentage and reports % remaining from volts. Copy it to `/SCRIPTS/WIDGETS/` on the radio's SD card.
+- **Caveat:** voltage under load is a poor state-of-charge indicator on a high-current quad. A voltage-based percentage will dive during punch-outs and recover at idle, so expect the number to bounce. The mAh count is smoother; voltage is the safer hard limit. Using both (Option 1 + Option 2) gives you the best of each.
+
 ## GPS Mount
 - [3d Printed TPU Mount for GPS - Rear Option](https://www.thingiverse.com/thing:6295389) - rear mount, holds video transmitter antenna and elrs receiver antenna.
 - [3d Printed TPU Mount for GPS - Front Option](https://www.thingiverse.com/thing:4759922)
